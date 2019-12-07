@@ -148,11 +148,6 @@ footer{
     width: 100%;
 }
 
-.cardTextPortfolio{
-    margin: 0 ;
-    padding: auto 2px;
-   
-}
 
 div > a .nav-link:hover div a span .brandLogo:after{
     content: "Enciso";
@@ -365,12 +360,6 @@ div > a .nav-link:hover div a span .brandLogo:after{
 }
 
 
-
-
-
-
-
-
 /*******************
 **********Portfoliio
 *******************/
@@ -378,46 +367,56 @@ div > a .nav-link:hover div a span .brandLogo:after{
 
 .portfolioDimension{
     height: 440px;
+    width: 240px;
+    margin: 10px;
     padding: 0;
+
+    border: 5px solid rgb(75,61,112) ;
+
+    background-color: rgb(250, 250, 250);
 }
 
 .cardBodyPortfolio{
     padding: .2rem;
+
 }
 
-.cardTitlePortfolio{
-    margin: 0;
-    padding: auto auto;
+.card-title{
     height: 76px;
 }
+.card-title > a{
+    color: rgb(75,61,112);
+}
 
-.card-VA{
+.portfolioCardVA{
+    padding: 0;
+    margin: 0;
+    
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
-    margin: auto 0;
-    padding: 0;
-    
 }
 
-.card-VA > a{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.cardTitlePortfolio > a{
-    color: rgb(75,61,112);
-    padding: auto 0;
-    margin: 0;
+.portfolioCardVA > a{
+    padding: 0 auto;
+    margin: 0 auto;
     line-height: 1.2;
-    
+    text-align: center;
+    display: block;
+    min-width: 240px;
 } 
+
+ .portfolioCardVA> p{
+    margin: 5px;
+    padding: auto 0 0 0;
+    display: block;
+}
+
 
 /******************************/
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+    padding: 0;
+    margin: 0;
 }
 /**********************************/
 
