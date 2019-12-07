@@ -316,10 +316,6 @@ div > a .nav-link:hover div a span .brandLogo:after{
 }
 
 
-.indexFooter{
-    margin-top: 1rem;
-}
-
 /*************************
 ******Skills*******
 /*************************/
@@ -471,10 +467,12 @@ div > a .nav-link:hover div a span .brandLogo:after{
 /*******************************/
 /******Problems to fix********/
 /******************************/
-    footer{
+    .footer{
         position: absolute;
         bottom: 0;
         width: 100%;
+
+        margin-top: 1rem;
     }
     
    
