@@ -123,10 +123,6 @@ input[placeholder]{
 
 footer{
     margin-top: 2rem;
-
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 /****************************************
@@ -475,7 +471,11 @@ div > a .nav-link:hover div a span .brandLogo:after{
 /*******************************/
 /******Problems to fix********/
 /******************************/
-
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
     
    
 
