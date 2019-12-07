@@ -29,9 +29,17 @@ font-family: 'Lato', sans-serif;
 }
 /************************************************/
 
-html, body{
+body{
     margin: 0;
     padding: 0;
+
+    padding-bottom: 196px;
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     font-family: 'Ubuntu', sans-serif;
 }
@@ -115,6 +123,10 @@ input[placeholder]{
 
 footer{
     margin-top: 2rem;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 /****************************************
@@ -133,7 +145,6 @@ footer{
             rgba(89,72,133,1) 51%,
             rgba(124,99,189,1) 80%,
             rgba(100,80,150,1) 100%) .5rem solid;
-    
 }
 
 .mainContent{
@@ -262,8 +273,8 @@ div > a .nav-link:hover div a span .brandLogo:after{
 }
 
 .contentBorder{
-    border: .8rem solid rgba(191, 187, 187, .8);
-    /*border-top-left-radius: 10%;*/
+    border: .8rem solid rgba(100,81,148,1);
+    border-radius: 5px;
 }
 
 .socialMedia{
@@ -300,7 +311,7 @@ div > a .nav-link:hover div a span .brandLogo:after{
     padding: 1rem;
 
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
 }
 
