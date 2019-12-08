@@ -1,0 +1,61 @@
+/******************************/
+/*--- Bootstrap Padding Fix --*/
+/*[class*="col-"] {
+    padding: 0;
+    margin: 0;
+}
+/**********************************/
+
+/*******************
+**********Portfoliio
+*******************/
+
+
+.card{
+    height: 440px;
+    width: 250px;
+    margin: 10px;
+    padding: 0;
+
+    border: 5px solid rgb(75,61,112) ;
+    background-color: rgb(250, 250, 250);
+}
+
+.cardBodyPortfolio{
+    padding: 0;
+    margin: 0;
+}
+
+.card-title{
+    height: 76px;
+}
+.card-title > a{
+    color: rgb(75,61,112);
+}
+
+.portfolioCardVA{
+    padding: 0;
+    margin: 0;
+    
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.portfolioCardVA > a{
+    padding: 0 auto;
+    margin: 0 auto;
+    line-height: 1.2;
+    text-align: center;
+    display: block;
+    min-width: 240px;
+} 
+
+ .portfolioCardVA> p{
+    margin: 5px;
+    padding: auto 0 0 0;
+    display: block;
+}
+
+.colPortfolio{
+    margin: 
+}

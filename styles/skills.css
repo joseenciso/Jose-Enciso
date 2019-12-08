@@ -11,7 +11,7 @@
 .colSkills{
     max-width: 210px;
     max-height: 329px;
-    margin: 1rem;
+    margin: 0 auto;
 }
 .card{
     margin: 0;
@@ -25,19 +25,9 @@
     width: 196px;
     height: 304px;
 
- /*   margin: .8rem;
-/*    border: .8rem solid rgb(75,61,112);
-*/    background-color: rgb(245,241,241);
-}
+    margin: 1rem auto;
 
-/*.card-title{
-    height: 76px;
-    padding-top: auto;
-}*/
-
-    
-.card-body {
-    font-family: 'Roboto', sans-serif;
+    background-color: rgb(245,241,241);
 }
 
 .hrSkill{
@@ -48,6 +38,7 @@
 
 .cardBodySkills{
     padding: 0;
+    margin: 0 auto;
 }
 
 .imgSkill {
@@ -59,5 +50,38 @@
     
     margin-top: 1px;
     margin-left: 3px;
+
+    border-radius: 3%;
 }
 
+
+/***********************************/
+/**********MediaQueries*************/
+/***********************************
+    SASS
+    @include media-breakpoint-up(xs) { ... }
+    @include media-breakpoint-up(sm) { ... }
+    @include media-breakpoint-up(md) { ... }
+    @include media-breakpoint-up(lg) { ... }
+    @include media-breakpoint-up(xl) { ... }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }
+
+*****************************************/
+@media (min-width: 993px ) and (max-width: 1200px) {
+
+    .skillCard{
+        margin: 1rem .5rem;
+    }
+
+}
