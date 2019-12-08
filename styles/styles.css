@@ -33,7 +33,7 @@ body{
     margin: 0;
     padding: 0;
 
-    padding-bottom: 196px;
+    padding-bottom: 204px;
 
     height: 100%;
     width: 100%;
@@ -71,8 +71,9 @@ a:hover{
 }
 
 
-footer{
+footer container-fluid{
     margin-top: 2rem;
+    margin-bottom: 2rem; 
 }
 
 /****************************************
@@ -199,7 +200,9 @@ div > a .nav-link:hover div a span .brandLogo:after{
 .socialMedia{
     font-size: 1.5rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
+
 .fontFooter{
     color: rgb(222, 222, 222);
     font-family: 'Roboto', sans-serif;
@@ -273,13 +276,7 @@ div > a .nav-link:hover div a span .brandLogo:after{
 /******Problems to fix********/
 /******************************/
  
-      .indexFooter{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
 
-        margin-top: 1rem;
-    } 
    
 
 }

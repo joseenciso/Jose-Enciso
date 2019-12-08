@@ -62,8 +62,20 @@ input[placeholder]{
     padding: 0;
 }
 
+.comment{
+    display:inline;
+}
+
+form .fas{
+    color: rgb(75, 61, 112) ;
+    height: 16px;
+    width: 16px;
+}
 
 
+textarea{
+    margin-left: 16px;
+}
 
 /***********************************/
 /**********MediaQueries*************/
@@ -104,6 +116,7 @@ input[placeholder]{
 
     textarea{
         width: 100%;
+        
     }
 
     input[type="submit"]{

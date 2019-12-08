@@ -108,4 +108,9 @@
         margin-left: .5rem;
         margin-right: .5rem;
     }
+
+    section > .row{
+        padding-left: -10px;
+        padding-right: -8px;
+    }
 }
