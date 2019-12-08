@@ -54,8 +54,12 @@ section > .container-fluid{
 
 @media(max-width: 576px){
     
-    quote{
-        font-size: .8rem;
+    .container-fluid{
+        padding: 0;
+    }
+    .quote{
+        font-size: 1rem;
+        padding: .8rem;
     }
 
 }
