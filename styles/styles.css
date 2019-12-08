@@ -272,14 +272,14 @@ div > a .nav-link:hover div a span .brandLogo:after{
 /*******************************/
 /******Problems to fix********/
 /******************************/
-    .indexFooter{
+ 
+      .indexFooter{
         position: absolute;
         bottom: 0;
         width: 100%;
 
         margin-top: 1rem;
-    }
-    
+    } 
    
 
 }
