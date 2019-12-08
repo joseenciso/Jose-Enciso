@@ -102,3 +102,10 @@
         width: 640px;
     }
 }
+
+@media(max-width: 414px){
+    .skillCard{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}
