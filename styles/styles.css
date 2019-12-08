@@ -81,6 +81,11 @@ footer{
 /*****************
 /***General Clases
 /****************/
+
+.container-fluid{
+    padding: 0;
+}
+
 .navbar-toggler,
 .fas{
     padding: 0;
