@@ -1,3 +1,48 @@
+
+input[type="text"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: rgb(75,61,112) solid ;
+    outline: none;
+    width: 22rem;
+    margin: 0 0 1rem 0 ;    
+}
+
+textarea{
+    border-top: none;
+    border-left: none;
+    border-right: rgb(75,61,112) solid ;
+    border-bottom: rgb(75,61,112) solid ;
+    outline: none;
+
+    resize: vertical;
+    width: 352px;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"]{
+    font-size: 1.5rem;
+    
+    color: rgb(222, 222, 222);
+    background-color: rgba(100,81,148,1);
+    border-radius: .2rem;
+    
+    margin: 2rem;
+    padding: .5rem 1rem ;
+}
+
+input[type="submit"]:hover{
+    color: rgb(103, 252, 83);
+}
+
+input[placeholder]{
+    padding-left: 5px;
+}
+
+
+/*************************************************/
+/*************************************************/
 .form{
     max-width: 450px;
     margin: 0 auto;
@@ -5,4 +50,63 @@
 
 .textInput{
     width: 100%;
+}
+
+.options{
+    padding-left: 3rem;
+    margin: 0;
+}
+
+.para-Opt{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/***********************************/
+/**********MediaQueries*************/
+/***********************************
+    SASS
+    @include media-breakpoint-up(xs) { ... }
+    @include media-breakpoint-up(sm) { ... }
+    @include media-breakpoint-up(md) { ... }
+    @include media-breakpoint-up(lg) { ... }
+    @include media-breakpoint-up(xl) { ... }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }
+
+*****************************************/
+@media (max-width: 400px) {
+
+
+
+    /***ContactMe***/
+    input[type="text"]{
+        width: 100%;
+    }
+
+    form{
+        padding-left: 0;
+
+    }
+
+    textarea{
+        width: 100%;
+    }
+
+    input[type="submit"]{
+        margin: 1rem auto;
+    }
 }
