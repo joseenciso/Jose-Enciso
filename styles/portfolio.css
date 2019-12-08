@@ -13,14 +13,18 @@
 
 .card{
     height: 440px;
-    width: 250px;
-    margin: 10px;
+    width: 254px;
+
     padding: 0;
 
     border: 5px solid rgb(75,61,112) ;
     background-color: rgb(250, 250, 250);
 }
-
+.card-img-top{
+    width: 240px;
+    height: 240px;
+    margin: 0 2px;
+}
 .cardBodyPortfolio{
     padding: 0;
     margin: 0;
@@ -57,5 +61,5 @@
 }
 
 .colPortfolio{
-    margin: 
+    margin: 1rem auto;
 }

@@ -85,3 +85,20 @@
     }
 
 }
+
+@media (min-width: 576pxpx) and (max-width: 768px){
+
+    .skillCard{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section > container{
+        margin: 0;
+        width: 640px;
+    }
+
+    section > .row{
+        width: 640px;
+    }
+}
