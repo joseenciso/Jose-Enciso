@@ -11,32 +11,20 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Lato', sans-serif;
 
 ****************************************/
-
-.ubuntu{
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.permanent{
-    font-family: 'Permanent Marker', cursive;
-}
-
-.roboto{
-    font-family: 'Roboto', sans-serif;
-}
-
-.lato{
-    font-family: 'Lato', sans-serif;
-}
+.ubuntu{    font-family: 'Ubuntu', sans-serif;}
+.permanent{    font-family: 'Permanent Marker', cursive;}
+.roboto{    font-family: 'Roboto', sans-serif;}
+.lato{    font-family: 'Lato', sans-serif;}
 /************************************************/
-
-
+[class*="col-"] {
+    padding: 0;
+    margin: 0;
+}
+/***********************************************/
 
 body{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-
-    padding-bottom: 204px;
-
 
     width: 100%;
     position: absolute;
@@ -69,7 +57,7 @@ a {
 
 header > a:hover,
 a:hover{
-    color: rgb(173, 171, 170);
+    color: rgb(199, 199, 199);
     text-decoration: underline;
 }
 
@@ -78,14 +66,14 @@ a:hover{
     margin-bottom: 0;
 }
 
-footer container-fluid{
-    margin-top: 2rem;
-    margin-bottom: 2rem; 
-}
 
 footer i{
     margin-left: 5px;
     transition: font-size color 1s;
+}
+
+footer{
+    background-color: #474647;
 }
 
 /****************************************
@@ -94,6 +82,10 @@ footer i{
 /*****************
 /***General Clases
 /****************/
+.navbar,
+.navbar-xpanded-md{
+    padding: 0;
+}
 
 .container-fluid{
     padding: 0;
@@ -171,6 +163,11 @@ div > a .nav-link:hover div a span .brandLogo:after{
     vertical-align: middle;
 }
 
+body{
+    background-color: #9089A0;
+}
+/*
+main,
 .backgroundColor{
     background: linear-gradient(90deg, 
     rgba(75,61,112,1) 0%,
@@ -178,7 +175,7 @@ div > a .nav-link:hover div a span .brandLogo:after{
     rgba(89,72,133,1) 51%,
     rgba(124,99,189,1) 80%,
     rgba(100,80,150,1) 100%);
-}
+}*/
 
 .socialItem{
     text-decoration: none;
@@ -212,7 +209,7 @@ div > a .nav-link:hover div a span .brandLogo:after{
 .socialMedia{
     font-size: 1.5rem;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 .fontFooter{
@@ -225,6 +222,12 @@ div > a .nav-link:hover div a span .brandLogo:after{
     padding: 0;
     margin: auto;
     font-size: 2rem;
+}
+
+
+
+header > .container-fluid{
+    background-color: rgb(75, 61, 112);
 }
 
 

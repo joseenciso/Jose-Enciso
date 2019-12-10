@@ -6,7 +6,11 @@ input[type="text"]{
     border-bottom: rgb(75,61,112) solid ;
     outline: none;
     width: 22rem;
-    margin: 0 0 1rem 0 ;    
+    margin: 0 0 1rem 0 ; 
+
+    background: rgb(75, 61, 112); 
+
+    border-radius: 2%;  
 }
 
 textarea{
@@ -19,6 +23,8 @@ textarea{
     resize: vertical;
     width: 352px;
     margin-bottom: 1rem;
+
+    background-color: RGBA(144, 137, 160, 1);
 }
 
 input[type="submit"]{
@@ -107,6 +113,10 @@ textarea{
     /***ContactMe***/
     input[type="text"]{
         width: 100%;
+    }
+
+    .col-xs-p0{
+        padding: 0;
     }
 
     form{

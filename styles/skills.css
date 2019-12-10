@@ -12,10 +12,6 @@ footer{
 }
 */
 
-[class*="col-"] {
-    padding: 0;
-    margin: 0;
-}
 
 .colSkills{
     max-width: 210px;
