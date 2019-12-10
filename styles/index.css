@@ -31,16 +31,12 @@ section > .container-fluid{
 
 .indexFooter{
         
-        bottom: 0;
-        width: 100%;
+    bottom: 0;
+    width: 100%;
 
-        margin-top: auto;
-    } 
+    margin-top: auto;
+} 
 
-    .square{
-        height: 200px;
-        width: 200px;
-    }
     
 /***********************************/
 /**********MediaQueries*************/
