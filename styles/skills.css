@@ -2,6 +2,15 @@
 ******Skills*******
 /*************************/
 /*col-lg-2 col-md-4 col-sm-6  col-sm-6 col-xs-2*/
+/*
+main{
+    margin-bottom: 2rem;
+}
+
+footer{
+    margin-top: 1rem;
+}
+*/
 
 [class*="col-"] {
     padding: 0;
@@ -109,8 +118,19 @@
         margin-right: .5rem;
     }
 
-    section > .row{
+/*    section > .row{
         padding-left: -10px;
         padding-right: -8px;
+    }*/
+}
+
+@media (min-width: 360px){
+    .rowSkillCards:nth-child(2){
+        margin-right: -9px;
     }
+    
+    .rowSkillCards:nth-child(1){
+        margin-left: -9px;
+    }
+    
 }

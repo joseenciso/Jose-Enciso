@@ -28,14 +28,19 @@ section > .container-fluid{
     height: 100%;
     margin-bottom: 2rem;
 }
-/*
+
 .indexFooter{
-        position: absolute;
+        
         bottom: 0;
         width: 100%;
 
-        margin-top: 1rem;
-    } */
+        margin-top: auto;
+    } 
+
+    .square{
+        height: 200px;
+        width: 200px;
+    }
     
 /***********************************/
 /**********MediaQueries*************/
@@ -71,11 +76,5 @@ section > .container-fluid{
 }
 
 @media )min-width: 576px){
-.indexFooter{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-
-        margin-top: 1rem;
-    }     
+  
 }
