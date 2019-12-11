@@ -5,7 +5,7 @@ input[type="text"]{
     border-right: none;
     border-bottom: rgb(75,61,112) solid ;
     outline: none;
-    width: 22rem;
+    max-width: 22rem;
     margin: 0 0 1rem 0 ; 
 
     color: rgb(75, 61, 112); 
@@ -22,7 +22,7 @@ textarea{
     outline: none;
 
     resize: vertical;
-    width: 352px;
+    max-width: 352px;
     margin-bottom: 1rem;
 
     color: rgb(75, 61, 112); 
@@ -83,8 +83,8 @@ input[placeholder]{
 
 form .fas{
     color: rgb(75, 61, 112) ;
-    height: 16px;
-    width: 16px;
+    height: 20px;
+    width: 20px;
 }
 
 
@@ -119,6 +119,21 @@ input::placeholder{
     @media (min-width: 1200px) { ... }
 
 *****************************************/
+@media (min-width: 320px) { 
+
+    main > i{
+        margin-left: 20px;
+    }
+    input[type="text"]{
+        width: 256px;
+    }
+    
+    .form{
+        margin-left: 32px;
+    }
+
+}
+
 @media (max-width: 400px) {
 
 
