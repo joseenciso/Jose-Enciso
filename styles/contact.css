@@ -23,10 +23,11 @@ textarea{
 
     resize: vertical;
     max-width: 352px;
+    min-width: 300px;
     margin-bottom: 1rem;
 
-    color: rgb(75, 61, 112); 
-    background-color: RGBA(144, 137, 160, 1);
+    color: ; 
+    background-color: rgba(144, 137, 160, 1);
 }
 
 input[type="submit"]{
@@ -49,6 +50,9 @@ input[placeholder]{
     color: rgb(222, 222, 222);
 }
 
+textarea[placeholder]{
+    color: rgb(222, 222, 222);
+}
 
 
 
@@ -77,6 +81,10 @@ input[placeholder]{
     display:inline;
 }
 
+.textArea{
+    color: rgb(75, 61, 112)
+}
+
 #form{
     margin: 0 1re;
 }
@@ -85,11 +93,6 @@ form .fas{
     color: rgb(75, 61, 112) ;
     height: 20px;
     width: 20px;
-}
-
-
-textarea{
-    margin-left: 16px;
 }
 
 
@@ -130,6 +133,11 @@ input::placeholder{
     
     .form{
         margin-left: 32px;
+    }
+
+    textarea{
+        margin: 0;
+        
     }
 
 }

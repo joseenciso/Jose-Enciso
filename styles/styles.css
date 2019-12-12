@@ -55,11 +55,13 @@ a {
     color: rgb(222, 222, 222);
 }
 
+.active,
 header > a:hover,
 a:hover{
     color: rgb(199, 199, 199);
     text-decoration: underline;
 }
+
 
 .indexfooter{
     margin-top: auto;

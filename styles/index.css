@@ -1,13 +1,22 @@
 /*******************
 ***************Index
 *******************/
+.profile{
+    display: block;
+    
+    max-width: 200px;
 
+
+    border-radius: 50px;
+}
 
 
 .titles{
     margin-top: 2rem;
     margin-bottom: 2rem;
+
 }
+
 
 /*
 .quote{

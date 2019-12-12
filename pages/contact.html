@@ -42,13 +42,13 @@
 <div class="container-fluid">
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-8">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam veritatis, odio nihil quae fugiat quo, tenetur voluptates voluptate ipsam itaque tempora qui, ullam libero ducimus.</p>
         </div>
     </div>
-<div class="row divForm">
+<div class="row">
 <div class=" col-xl-8 offset-xl-2 col-lg-8 offset-lg-2 offset-md-2 col-sm-10 offset-sm-1 col-xs-10 offset-xs-1">
-    <form id="form">
+    <form id="form" method="POST" action="https://formdump.codeinstitute.net">
     <fieldset>
         <legend>Contact form:</legend>
         
@@ -56,10 +56,10 @@
         <div class="form">
 
             <i class="fas fa-user"></i>
-            <input type="text" name="first_name" placeholder="First name"/></br>
+            <input type="text" name="first_name" placeholder="First name" required/></br>
 
             <i class="fas fa-users"></i>
-            <input type="text" name="last_name" placeholder="Last name"/></br>
+            <input type="text" name="last_name" placeholder="Last name" required/></br>
 
             </br>
 
@@ -79,13 +79,14 @@
             </br>
                 
             <i class="fas fa-envelope-open-text"></i>
-            <input type="text" name="email" placeholder="Email" class="textinput"/></br>
+            <input type="text" name="email" placeholder="Email" class="email" required/></br>
             
             </br>
 
             
-            <div class="comment"><i class="fas fa-comment-alt"></i><span>How can I help?</span>
-            <textarea rows="6" cols="15vw" name="" placeholder="..."></textarea></br>
+            <div class="comment"><i class="fas fa-comment-alt"></i><span class="textArea">How can I help?</span>
+            </br>
+            <textarea rows="6" cols="15vw" name="" placeholder="..." required></textarea></br>
             </div>
             
             <input type="submit" value="Submit"/>
@@ -107,10 +108,10 @@
     <div class="row ">
         <div class="col-xs-4 col-sm-6 col-md-4 col-xl-2 mediaFooter fontFooter text-right">
             <h5 class="socialMedia ">Follow me on</h5>
-            <div><a href="#" target="_blank" class="socialItem facebook">facebook<i class="fab fa-facebook-square "></i></a></div>
-            <div><a href="#" target="_blank" class="socialItem instagram">instagram<i class="fab fa-instagram"></i></a></div>
-            <div><a href="#" target="_blank" class="socialItem linkedin">linkedin<i class="fab fa-linkedin"></i></a></div>
-            <div><a href="#" target="_blank" class="socialItem twitter">twitter<i class="fab fa-twitter-square"></i></a></div>
+            <div><a href="#" target="_blank" rel="noopener" class="socialItem facebook">facebook<i class="fab fa-facebook-square "></i></a></div>
+            <div><a href="#" target="_blank" rel="noopener" class="socialItem instagram">instagram<i class="fab fa-instagram"></i></a></div>
+            <div><a href="#" target="_blank" rel="noopener" class="socialItem linkedin">linkedin<i class="fab fa-linkedin"></i></a></div>
+            <div><a href="#" target="_blank" rel="noopener" class="socialItem twitter">twitter<i class="fab fa-twitter-square"></i></a></div>
         </div>
     </div>
     </div>
