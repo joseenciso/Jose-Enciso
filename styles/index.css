@@ -46,6 +46,16 @@ section > .container-fluid{
 
 
 
+.hi{
+    
+}
+
+
+.welcome{
+    margin: 2rem auto;
+}
+
+
 
 /***********************************/
 /**********MediaQueries*************/
@@ -92,7 +102,6 @@ section > .container-fluid{
 
 @media (min-width: 300px){
   .profile{
-      margin-left: auto;
-      margin-right: auto;
+      margin: 1rem;
   }
 }

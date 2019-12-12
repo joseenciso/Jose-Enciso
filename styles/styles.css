@@ -55,7 +55,7 @@ a {
     color: rgb(222, 222, 222);
 }
 
-.active,
+
 header > a:hover,
 a:hover{
     color: rgb(199, 199, 199);
@@ -236,7 +236,7 @@ header > .container-fluid{
 }
 
 .active{
-
+    border: 2px solid rgb(222, 222, 222);
 }
 
 
