@@ -43,13 +43,18 @@ section > .container-fluid{
 }
 
 
-
+main .mainIndex{
+    font-size: 2rem;
+}
 
 
 .hi{
-    
+    color: (57, 171, 196);
 }
 
+.name{
+    font-weight: 400;
+}
 
 .welcome{
     margin: 2rem auto;
