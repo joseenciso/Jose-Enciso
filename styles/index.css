@@ -45,6 +45,8 @@ section > .container-fluid{
 
 
 
+
+
 /***********************************/
 /**********MediaQueries*************/
 /***********************************
@@ -88,6 +90,9 @@ section > .container-fluid{
 
 }
 
-@media (min-width: 576px){
-  
+@media (min-width: 300px){
+  .profile{
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
