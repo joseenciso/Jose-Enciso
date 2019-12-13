@@ -11,7 +11,10 @@ footer{
     margin-top: 1rem;
 }
 */
-
+hr{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
 
 .colSkills{
     max-width: 210px;

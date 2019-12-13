@@ -2,11 +2,10 @@
 ***************Index
 *******************/
 .profile{
-    display: block;
     
     max-width: 200px;
 
-    text-align: center;
+    padding: 1rem auto;
 
     border-radius: 50%;
 }
@@ -17,6 +16,8 @@
     margin-bottom: 2rem;
 
 }
+
+
 
 
 /*
