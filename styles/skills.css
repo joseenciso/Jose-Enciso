@@ -35,11 +35,7 @@ footer{
     background-color: rgb(245,241,241);
 }
 
-.hrSkill{
-    margin: 2px 0;
-    border:1px solid rgb(75,61,112);
 
-}
 
 .cardBodySkills{
     padding: 0;
@@ -98,7 +94,7 @@ footer{
         margin-right: auto;
     }
 
-    section > container{
+  /*  section > container{
         margin: 0;
         width: 640px;
     }
@@ -106,27 +102,4 @@ footer{
     section > .row{
         width: 640px;
     }
-}
-
-@media(max-width: 414px){
-    .skillCard{
-        margin-left: .5rem;
-        margin-right: .5rem;
-    }
-
-/*    section > .row{
-        padding-left: -10px;
-        padding-right: -8px;
-    }*/
-}
-
-@media (min-width: 360px){
-    .rowSkillCards:nth-child(2){
-        margin-right: -9px;
-    }
-    
-    .rowSkillCards:nth-child(1){
-        margin-left: -9px;
-    }
-    
-}
+*/}

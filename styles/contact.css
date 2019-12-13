@@ -124,29 +124,25 @@ input::placeholder{
 *****************************************/
 @media (min-width: 320px) { 
 
-    main > i{
-        margin-left: 20px;
-    }
+   
+
     input[type="text"]{
-        width: 256px;
+        width: 290px;
     }
     
-    .form{
-        margin-left: 32px;
-    }
 
     textarea{
         margin: 0;
+        width: 290px;
+        max-width: 300px;
         
     }
 
 }
-
+/*
 @media (max-width: 400px) {
 
 
-
-    /***ContactMe***/
     input[type="text"]{
         width: 100%;
     }
@@ -166,4 +162,4 @@ input::placeholder{
     input[type="submit"]{
         margin: 1rem auto;
     }
-}
+}*/
