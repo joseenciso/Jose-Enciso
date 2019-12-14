@@ -1,11 +1,11 @@
 /*******************
 ***************Index
 *******************/
-.profile{
-    
+main .profile{
+    display: block;
     max-width: 200px;
 
-    padding: 1rem auto;
+    margin: 1rem auto;
 
     border-radius: 50%;
 }
@@ -88,27 +88,25 @@ main .mainIndex{
 
 *****************************************/
 
-@media(max-width: 576px){
-    
+
+
+@media (min-width: 300px) and (max-width: 576px){
+    .mainIndex{
+        font-size: .8rem;
+    }
     header{
         height: 74px;
     }
-
-
-
-    .quote{
-        font-size: 1.3rem;
-        padding: .6rem;
-    }
-
-    h2{
-        font-size: 1.2rem;  
-    }
-
-}
-
-@media (min-width: 300px){
-  .profile{
+   
+    .profile{
       margin: 1rem;
   }
+    
+    .mainIdex > p{
+        font-size: 1.1rem;
+    }
+
+    .col-xs-8{
+        margin: .5rem 1rem;
+    }
 }
