@@ -96,6 +96,13 @@ footer{
     padding: 0;
 }
 
+.navbar > .active{
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/calc*/
+
+    padding-top: calc(100% - 2px);
+    padding-bottom: calc(100% - 2px);
+}
+
 .navbar-toggler,
 .fas{
     padding: 0;
@@ -288,22 +295,3 @@ header > .container-fluid{
 
 *****************************************/
 
-
-
-
-
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px)  {
-
-
-/*******************************/
-/******Problems to fix********/
-/******************************/
- 
-
-   
-
-}
