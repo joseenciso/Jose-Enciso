@@ -149,7 +149,7 @@ input::placeholder{
 
     section p{
         width: 350px;
-        margin: auto .5rem;
+        margin: .5rem auto ;
     }
 
 }
