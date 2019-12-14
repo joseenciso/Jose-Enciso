@@ -96,12 +96,12 @@ footer{
     padding: 0;
 }
 
-.navbar > .active{
+/*.navbar > .active{*/
 /*https://developer.mozilla.org/en-US/docs/Web/CSS/calc*/
-
+/*
     padding-top: calc(100% - 2px);
     padding-bottom: calc(100% - 2px);
-}
+}*/
 
 .navbar-toggler,
 .fas{
