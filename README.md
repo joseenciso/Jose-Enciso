@@ -22,6 +22,14 @@ Using the bootstrap cards structure, and customize them with HTML and CSS, to ch
 In the "contac me" page will find a a simple form  which all the components are manipulated to change the way they look like.
 
 ### The tool
+Different tools were used throughout the development of this project.
+
+* For version control, ***Git** and ***GitHub*** were used. allowing to make changes and save them, if some of them were not the right change or did not fit with the new styling,or sometimes move through the history's branch.
+In the end, GitHubDesktop was introduced to make easier the task of working with ***Git*** throw the command line, doing it with a visual application. 
+
+* ***AWS*** and ***GitPod***, these are excelent **IDE** based ***online**, for some circumstances, this are not a suitable options.
+
+* ***VS Code***, this software does not require internet conection to work, for this reason, and because sometimes there was no way to access to the internet or the speed was not fast enough, ***VS Code*** was used in most cases.
 
 
 ### Support
