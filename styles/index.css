@@ -46,7 +46,7 @@ main .mainIndex{
 
 .name{
     color: rgb(75, 61, 112) ;
-    padding: .5rem;
+    padding-left: .5rem;
 }
 
 .name:hover{
