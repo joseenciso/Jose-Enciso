@@ -78,6 +78,7 @@ input[type="submit"]:hover{
 .options{
     padding-left: 3rem;
     margin: 0;
+    margin-top: 10px;
 }
 
 .para-Opt{
