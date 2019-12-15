@@ -1,6 +1,8 @@
 /*******************
 ***************Index
 *******************/
+
+
 main .profile{
     display: block;
     max-width: 200px;
@@ -51,6 +53,10 @@ main .mainIndex{
 
 .FSWD{
     color: #474647;
+}
+
+.passion{
+    text-transform: underline;
 }
 
 .welcomePa{
