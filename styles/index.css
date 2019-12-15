@@ -1,7 +1,9 @@
 /*******************
 ***************Index
 *******************/
-
+body{
+    margin-bottom: 6rem;
+}
 
 main .profile{
     display: block;
