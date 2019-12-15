@@ -29,7 +29,7 @@ section > .container-fluid{
 
 main{
     margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-bottom: 2rem;
 }
 
 main .mainIndex{
@@ -131,7 +131,7 @@ main .mainIndex{
     main{
         height: 80%;
         padding-top: 2rem;
-        
+        margin-bottom: 0;
     }
 
    
