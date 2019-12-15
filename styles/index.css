@@ -27,6 +27,10 @@ section > .container-fluid{
     margin-bottom: 2rem;
 }
 
+main{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
 
 main .mainIndex{
     font-size: 2rem;
@@ -118,3 +122,18 @@ main .mainIndex{
     }
    
 }
+
+@media (min-height: 1024){
+    body{
+        height: 100vh;
+        padding-bottom: 163px;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+        
+    }
+
+}
+

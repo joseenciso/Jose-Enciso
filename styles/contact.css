@@ -1,3 +1,24 @@
+main{
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+form{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+legend{
+    padding-left: 2rem;
+    font-size: 2rem;
+    
+}
 
 input[type="text"]{
     border-top: none;
@@ -19,8 +40,14 @@ input[placeholder]{
     color: rgb(222, 222, 222);
 }
 
+p, legend{
+    color: rgb(75, 61, 112);
+}
+.options{
+    color: rgb(75, 61, 112)
+}
 input[type="radio"]{
-    margin-right: 10px;    
+    margin-right: 10px;  
 }
 
 textarea{
@@ -171,3 +198,18 @@ textarea[placeholder]{
     }
 
 }
+/*
+
+@media (min-height: 1024){
+    body{
+        height: 100%;
+        padding-bottom: 163px;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+        
+    }
+
+}*/
