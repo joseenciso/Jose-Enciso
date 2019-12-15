@@ -43,7 +43,8 @@ header{
 
 main{    margin-top: 6rem; }
 
-i{    color: rgb(222, 222, 222); }
+a, i{    color: rgb(222, 222, 222); }
+
 i .nav-link{    padding-left: .5rem;}
 
 a {
@@ -52,7 +53,6 @@ a {
     font-weight: 300;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: rgb(222, 222, 222);
 }
 
 
@@ -245,6 +245,7 @@ header > .container-fluid{
 .active{
     border: 2px solid rgb(222, 222, 222);
 }
+
 
 
 .mediaFooter{
