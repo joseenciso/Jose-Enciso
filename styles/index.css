@@ -120,6 +120,10 @@ main .mainIndex{
         padding-right: .8rem; 
 
     }
+
+    .name{
+        padding: .2rem;
+    }
    
 }
 
