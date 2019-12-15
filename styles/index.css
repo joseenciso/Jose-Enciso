@@ -9,7 +9,7 @@ main .profile{
 
     border-radius: 50%;
 
-    border: 5px solid rgb(75, 61, 112);
+    border: 10px solid #474647;
 
 }
 
@@ -29,7 +29,7 @@ section > .container-fluid{
 main .mainIndex{
     font-size: 2rem;
     text-align: center;
-    color: rgb(75, 61, 112);
+    color: rgb(222, 222, 222);
 }
 
 
@@ -49,6 +49,9 @@ main .mainIndex{
 
 }
 
+.FSWD{
+    color: #474647;
+}
 
 .welcomePa{
 /*    margin: 2rem auto;*/
@@ -61,10 +64,12 @@ main .mainIndex{
 .welcomePa:hover{
     text-transform: uppercase;
     font-size: 1.5rem;
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(75, 61, 112);
 }
 
-
+.ideas{
+    background-color: #474647;
+}
 
 
 /***********************************/
