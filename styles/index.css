@@ -1,9 +1,7 @@
 /*******************
 ***************Index
 *******************/
-body{
-    margin-bottom: 6rem;
-}
+
 
 main .profile{
     display: block;
@@ -29,10 +27,7 @@ section > .container-fluid{
     margin-bottom: 2rem;
 }
 
-main{
-    margin-top: 7rem;
-    margin-bottom: 2rem;
-}
+
 
 main .mainIndex{
     font-size: 2rem;
@@ -133,13 +128,12 @@ main .mainIndex{
     main{
         height: 80%;
         padding-top: 2rem;
-        margin-bottom: 0;
+        margin-bottom: 7rem;
     }
-
-   
+ 
 
     footer{
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
  
 
