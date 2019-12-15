@@ -192,10 +192,13 @@ textarea[placeholder]{
         margin: .5rem auto;
     }
 
-    section p{
-        width: 320px;
-        margin: .5rem auto ;
+    p{
+        width: 100%;
+        margin: .5rem;
+        justify-content: center;   
     }
+
+
 
 }
 /*
