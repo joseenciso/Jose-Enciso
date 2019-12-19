@@ -48,6 +48,11 @@ In the end, GitHubDesktop was introduced to make easier the task of working with
 
 * ***VS Code***, this software does not require internet conection to work, for this reason, and because sometimes there was no way to access to the internet or the speed was not fast enough, ***VS Code*** was used in most cases.
 
+### Deplyoment    
+
+This project has been deployed using ***GitHub Pages*** and the link can be found here: 
+[https://skrkrw.github.io/userCentricProjectOne/]
+
 
 ### Support
 This are the most frecuent visit websites to find ansewrs to all the problems I faced during the developement of this project:  
