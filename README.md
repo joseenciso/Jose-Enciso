@@ -51,7 +51,7 @@ In the end, GitHubDesktop was introduced to make easier the task of working with
 ### Deplyoment    
 
 This project has been deployed using ***GitHub Pages*** and the link can be found here: 
-[https://skrkrw.github.io/userCentricProjectOne/]
+[https://skrkrw.github.io/userCentricProjectOne/](https://skrkrw.github.io/userCentricProjectOne/)
 
 
 ### Support
