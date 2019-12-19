@@ -21,7 +21,7 @@ Using the bootstrap cards structure, and customize them with HTML and CSS, to ch
 ### Contact Me
 In the "contac me" page will find a a simple form  which all the components are manipulated to change the way they look like.
 
-### The tool
+### The tools
 Different tools were used throughout the development of this project.
 
 * For version control, ***Git*** and ***GitHub*** were used. allowing to make changes and save them, if some of them were not the right change or did not fit with the new styling,or sometimes move through the history's branch.
