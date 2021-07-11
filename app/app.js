@@ -19,6 +19,7 @@ function fetchRepos(){
                 card += `
                 <div class="card">
                     <img src="${repo.html_url}/img/thumpnail.png" class="card-img-top rounded-3" alt="...">
+                    <h3>${repo.name}</h3>
                     <p>${repo.description}</p>
                     <div class="card-button-container text-center">
                         <a href="${repo.html_url}" class="btn button p-1" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
