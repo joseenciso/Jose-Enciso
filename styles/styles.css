@@ -25,7 +25,8 @@ nav a,
 }
 
 .intro a,
-.button{
+.button,
+p{
     color: #6F617E;
 }
 
@@ -50,9 +51,9 @@ main section{
 }
 
 
-p {
+/* p {
     color: #91C5FC;
-}
+} */
 
 .cards-container{
     display: flex;
@@ -92,13 +93,15 @@ form label{
     text-shadow: .1rem 0px 0px #d3d3d3;
 }
 
-
-form input:focus{
+form input::before,
+form input:focus
+form input::after{
+    /* outline: none; */
     box-shadow: 0 0 .8rem #6F617E;
     -webkit-box-shadow: 0 0 .8rem #6F617E !important;
 }
 
-.container form{
+form{
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
