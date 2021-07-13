@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Lobster&family=Patrick+Hand&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
 html,
 body,
 input[type=submit]{
@@ -21,8 +25,33 @@ nav a,
 .hi,
 .nav-item{
     font-family: 'Lobster', cursive;
-    font-size: 2.5rem;
     color: #6F617E!important;
+}
+
+h1,
+h2,
+h3,
+nav,
+nav a,
+.navbar-brand,
+.hi{
+    font-size: 2.5rem;
+}
+
+.navbar-brand:hover{
+    text-decoration: underline;
+}
+.nav-item .nav-link{
+    font-size: 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.nav-item .nav-link:hover{
+    background-color: #6F617E;
+    color: white!important;
 }
 
 .intro a,
@@ -39,6 +68,8 @@ p{
 h2 {
     letter-spacing: 2px;
     text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 h3{
@@ -115,7 +146,7 @@ form{
 
 section .box{
     width: 650px;
-    margin: 2rem auto;
+    margin: 3.5rem auto;
     padding: 3rem;
     background-color: white;
     border-radius: 1rem;
@@ -176,15 +207,17 @@ footer p{
 @media(min-width: 992px){
     header nav,
     section{
-        width: 50%;
-    }
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
 }
 
-@media (min-width: 769px){
+@media (min-width: 769px) and (max-width: 991px){
 
     header nav,
     section{
-        width: 80%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -220,7 +253,8 @@ footer p{
 
 @media (min-width: 577px){
     section{
-        margin-top: 10vw;;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
     }
 
     form fieldset{
