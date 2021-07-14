@@ -3,8 +3,8 @@
 
 ## First Mileston Project
 ## Personal Web Developer Website
-### https://joseenciso.github.io/jose.enciso/
-### https://github.com/joseenciso/jose.enciso/
+### https://joseenciso.github.io/Jose-Enciso//
+### https://github.com/joseenciso/Jose-Enciso/
 ### Sumary
 The purpose of this project is to use all the knowledge gained creat a static website with from one to four pages.
 This project is based on ***HTML*** to structure each page, ***CSS*** and ***BootStrap 4*** to style each element on the four pages. 
