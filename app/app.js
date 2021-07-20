@@ -16,20 +16,27 @@ function fetchRepos(){
                 console.log(repo.html_url);
                 console.log(`https://${user}.github.io/${repo.name}/`);
                 
-                card += `
-                <div class="card">
-                    <img src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png" class="card-img-top rounded-3" alt="...">
-                    <h3>${repo.name}</h3>
-                    <p>${repo.description}</p>
-                    <div class="card-button-container text-center">
-                        <a href="${repo.html_url}" class="btn button p-1" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
-                        <a href="https://${user}.github.io/${repo.name}/" class="btn button p-1" target="_blank"><i class="fas fa-globe-europe"></i>Live</a>
-                    </div>
-                </div>
-                `;
+
+                if ( repo.name != "Jose-Enciso"){
+                    card += `
+                        <div class="card">
+                            <img src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png" class="card-img-top rounded-3" alt="...">
+                            <div class="text-container">
+                                <h3 class="p-2 text-center">${repo.name}</h3>
+                                <p class="px-2">${repo.description}</p>
+                                <div class="card-button-container text-center mt-auo">
+                                    <hr class="m-0">
+                                    <a href="${repo.html_url}" class="btn button p-1" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
+                                    <a href="https://${user}.github.io/${repo.name}/" class="btn button p-1" target="_blank"><i class="fas fa-globe-europe"></i>Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
 
             });
-            $(".cardsContainer").append(card);
+            $("#cardsContainer").append(card);
         }
     )
 }

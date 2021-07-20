@@ -257,6 +257,36 @@ footer p{
         margin-bottom: 10vh;
     }
 
+
+    .card{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 500px;
+        height: 250px;
+    }
+
+    .card img{
+        width: 150px;
+    }
+
+    .card .text-container{
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+    }
+    
+    /* .card .text-container p{
+        height: 100%;
+    } */
+
+    .card .card-button-container{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
     form fieldset{
         width: 90%;
     }
@@ -269,14 +299,25 @@ footer p{
 
 @media (max-width: 576px){
 
+    nav{
+        background-color: #DEC3FC;
+        background-image: linear-gradient(62deg, #CEC3FC 0%, #DEC3FC 100%);
+    }
+    
     section{
         width: 95%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
     }
 
     .cards-conainer .card{
-        width: 45%;
+        width: 100%;
         margin-left: .5rem;
         margin-right: .5rem;
+    }
+
+    .card img{
+        margin: auto;
     }
 
     form .mb-3{
@@ -289,7 +330,4 @@ footer p{
         margin-right: auto;
     }
 
-    section .card{
-        width: 45%;
-    }
 }
