@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crete Round', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2,
+.hi {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    background-color: #DEC3FC;
+    background-image: linear-gradient(62deg, #CEC3FC 0%, #DEC3FC 100%);
+}
+
+nav,
+nav ul {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+nav ul {
+    margin-left: auto;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+/*
+header nav #navbarNav {
+    z-index: 999;
+}*/
+
+main {
+    z-index: -1;
+}
+
+main section {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    border-bottom: .1rem solid red;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+button {
+    display: none;
+    font-size: 1.5rem;
+    color: rgb(104,65,169);
+    border: 2px solid rgb(104,65,169);
+    text-shadow: 1px 0 10px white;
+}
+
+button:hover{
+    /*border-color: rgb(222,195,252);*/
+    /*background: radial-gradient(circle, rgba(222,195,252,0.4066001400560224) 57%, rgba(222,195,252,1) 85%, rgba(222,195,252,1) 100%);
+    */
+    background-color: transparent;
+    text-shadow: 1px 1px 20px white;
+}
+
+section.intro {
+    background-color: rgb(170, 169, 169);
+}
+
+section.intro .box-text,
+section.intro .link-wrapper {
+    width: 80vh;
+}
+
+section.intro .box-text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+section.intro .link-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+section.intro .link-wrapper a {
+    text-align: center;
+}
+
+section.intro .box-text p {
+    font-size: 1.2rem;
+}
+
+section.intro .link-wrapper {
+    bottom: 10vh;
+    margin-bottom: 2rem;
+}
+
+section.intro .link-wrapper a,
+.card .card-inner .card-button-container a {
+    color: rgb(104,65,169);
+}
+
+section.intro .link-wrapper a:hover {
+    color: #DEC3FC;
+}
+
+section.portfolio .cards-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    min-width: 100%;
+    height: 80vh;
+    /*perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border: 0;
+}
+
+.card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid rgb(104,65,169);
+    border-radius: 2.5%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/*
+.card .card-img,
+.card .card-body {
+    backface-visibility: hidden;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card .card-body {
+    transform: rotateY(-180deg);
+}*/
+
+.card .card-body hr {
+    height: .2rem;
+    background-color: rgb(104,65,169);
+    border: 1px solid rgb(104,65,169);
+}
+
+.card .card-body .card-button-container .button {
+    margin: .2rem .5rem;
+    font-size: 1.2rem;
+}
+
+
+.card .card-img {
+    background-color: #bbb;
+    color: black;
+}
+
+section.contact form {
+    /*width: 30vw;*/
+}
+
+form label i {
+    padding-right: 5px;
+    color: rgb(104,65,169);
+}
+
+form button {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 15vw;
+    color: rgb(104,65,169)!important;
+}
+
+form button:hover i{
+    transform: scale(1.2);
+}
+
+@media (max-width: 300px){
+
+    .card {
+        min-width: 90%;
+    }
+
+    section.intro .box-text {
+        top: 10vh;
+    }
+    
+    section.intro .link-wrapper {
+        bottom: 10vh;
+    }
+}
+
+@media (max-width: 576px){
+
+    section.intro .box-text {
+        top: 20vh;
+    }
+
+    .card  {
+        width: 90vw;
+    }
+
+    form button {
+        width: 90%;
+
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 769px) {
+
+    header .brand {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .card {
+        min-width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    section.contact form {
+        width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+
+
+    header nav {
+        width: 1200px;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    header nav a.brand {
+        margin-left: .5rem;
+    }
+
+    header nav ul {
+        margin-right: .5rem;
+    }
+
+    .card {
+        width: 30vw;
+    }
+}
+
+/*
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
+*/
