@@ -7,7 +7,7 @@
 
 html,
 body,
-input[type=submit]{
+button {
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
@@ -23,24 +23,18 @@ nav,
 nav a,
 .navbar-brand,
 .hi,
-.nav-item{
+.nav-item,
+form label{
     font-family: 'Lobster', cursive;
     color: #6F617E!important;
 }
 
-h1,
-h2,
-h3,
-nav,
-nav a,
-.navbar-brand,
-.hi{
-    font-size: 2.5rem;
-}
+
 
 .navbar-brand:hover{
     text-decoration: underline;
 }
+
 .nav-item .nav-link{
     font-size: 2rem;
     margin-left: .5rem;
@@ -52,6 +46,10 @@ nav a,
 .nav-item .nav-link:hover{
     background-color: #6F617E;
     color: white!important;
+}
+
+.intro {
+    height: 60vh;
 }
 
 .intro a,
@@ -68,8 +66,6 @@ p{
 h2 {
     letter-spacing: 2px;
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 
 h3{
@@ -98,8 +94,14 @@ main section{
     justify-content: space-around;
 }
 
+
 .card{
-    width: clamp(25%, 300px, 300px);
+    /*display: flex;
+    /*justify-content: space-around;*/
+    /*flex-direction: row;*/
+    width: 500px;
+    /*height: 250px;
+    /*width: clamp(25%, 300px, 300px);*/
     margin: .5rem;
 }
 
@@ -107,8 +109,29 @@ main section{
     object-fit: cover;
 }
 
+.card .text-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.493);    
+}
+
+.card p {
+    min-height: 50%;
+    margin: auto 0;
+    vertical-align: middle;
+}
+
+.card .card-button-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .card a{
-    font-size: clamp(.8rem, 1vw, 1.2rem);
+    /*font-size: clamp(.8rem, 1vw, 1.2rem);*/
+    font-size: 1.2rem;
     font-weight: clamp(500, 600, 700);
     display: inline-block;
     width: 45%;
@@ -125,7 +148,7 @@ form i::before{
 form label{
     font-family: 'Lobster', cursive;
     font-size: 1.5rem;
-    color: white;
+    /*color: white;*/
     letter-spacing: .2rem;
     text-shadow: .1rem 0px 0px #d3d3d3;
 }
@@ -144,8 +167,11 @@ form{
     margin-right: auto;
 }
 
+
+
 section .box{
     width: 650px;
+    /* display: flex; */
     margin: 3.5rem auto;
     padding: 3rem;
     background-color: white;
@@ -159,53 +185,27 @@ section .coding-img{
     background-size: cover;
 }
 
-.btn i{
+section.portfolio h2 {
+    padding-top: 1px;
+}
+
+.btn i {
     padding-right: .5rem;
 }
 
-.button{
-    
-}
 
 .submit-wrapper{
     border: 1px white solid;
     border-radius: .1rem;
 }
 
-
 .submit-wrapper{
     width: 120px;
     border-radius: .2rem;
 }
 
-input[type=submit]{
-    font-family: 'Lobster', cursive;
-    font-size: 1.5rem;
-    color: #6F617E!important;
-    text-shadow: 1px 0 10px white;
-}
-
-input[type=submit]:hover{
-    color: #6F616A!important;
-    text-shadow: 1px 1px 20px white;
-}
-
-
-footer{
-    margin-top: 10vw;
-    background-color: #6F617E;
-}
-
-footer p{
-    margin: 0;
-    padding: 1vw 0;
-    color: white;
-    text-align: center;
-
-}
-
 @media(min-width: 992px){
-    header nav,
+    /*header nav,*/
     section{
         width: 80%;
         margin-left: auto;
@@ -215,20 +215,20 @@ footer p{
 
 @media (min-width: 769px) and (max-width: 991px){
 
-    header nav,
+    /*header nav,*/
     section{
         width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    nav .button-container{
+   /* nav .button-container{
         display: none;
     }
 
     nav .navbar-menu ul li{
         display: inline-block;
-    }
+    }*/
 }
 
 @media (max-width: 768px){
@@ -257,35 +257,22 @@ footer p{
         margin-bottom: 10vh;
     }
 
-
-    .card{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        width: 500px;
-        height: 250px;
-    }
-
     .card img{
-        width: 150px;
+        width: 100%;
     }
-
+/*
     .card .text-container{
         width: 100%;
         height: 100%;
 
         position: relative;
-    }
+    }*/
     
     /* .card .text-container p{
         height: 100%;
     } */
 
-    .card .card-button-container{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
+
 
     form fieldset{
         width: 90%;
