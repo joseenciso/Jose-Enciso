@@ -29,24 +29,27 @@ function fetchRepos(){
             console.log(repoResponse);
             console.log(repoResponse[0].name);
             repoResponse.forEach((repo, index) => {
-                console.log(repo.name);
+                //console.log(repo.name);
                 console.log(repo.html_url);
-                console.log(`https://${user}.github.io/${repo.name}/`);
+                //console.log(`https://${user}.github.io/${repo.name}/`);
                 //console.log("P " + repo.description.length())
 
                 if ( repo.name != "Jose-Enciso"){
+                    let repoHTML = repo.html_url;
                     card += `
                         <div class="card">
-                            <div class="card-inner">
-                                <img class="card-img" alt="..." src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png">
-                                <div class="card-body position-absolute top-0 start-0 h-100">
-                                    <h3 class="text-center">${repo.name}</h3>
-                                    <p class="card-text">${repo.description}</p>
-                                    <div class="card-button-container text-center position-absolute bottom-0 start-0 w-100">
-                                        <hr class="m-0">
-                                        <a href="${repo.html_url}" class="btn button p-1" target="_blank"><i class="fab fa-github-alt px-1"></i>Code</a>
-                                        <a href="https://${user}.github.io/${repo.name}/" class="btn button p-1" target="_blank"><i class="fas fa-globe-europe px-1"></i>Live</a>
-                                    </div>
+                            <h3>${repo.name}</h3>
+                            <img class="card-img" alt="..." src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png">
+                            <div class="card-body">
+                                <p class="card-text">${repo.description}</p>
+                                <div class="card-button-container">
+                                    <a href="${repoHTML}" class="button" target="_blank">
+                                        <i class="fab fa-github-alt fab-5x"></i><span>Code</span>
+                                    </a>
+                                    <a href="https://${user}.github.io/${repo.name}/" class="button" target="_blank">
+                                        <i class="fas fa-globe-europe fas-5x"></i>
+                                        <span>Live</span>
+                                        </a>
                                 </div>
                             </div>
                         </div>

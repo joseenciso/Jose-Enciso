@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Crete Round', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(238, 229, 229);
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 ul li {
@@ -27,7 +29,7 @@ h2,
 h3 {
     font-size: 1.9rem;
 }
-
+/*
 header {
     position: sticky;
     top: 0;
@@ -52,13 +54,14 @@ nav ul {
 nav ul li {
     margin-left: 1rem;
 }
-/*
+
 header nav #navbarNav {
     z-index: 999;
 }*/
 
 main {
     z-index: -1;
+    background-color: rgb(43, 43, 43);
 }
 
 main section {
@@ -76,50 +79,158 @@ section h2 {
     margin-bottom: 3rem;
 }
 
-button {
+/*
+nav button {
     display: none;
     font-size: 1.5rem;
     color: rgb(104,65,169);
     border: 2px solid rgb(104,65,169);
     text-shadow: 1px 0 10px white;
 }
+ */
 
-button:hover{
-    /*border-color: rgb(222,195,252);*/
-    /*background: radial-gradient(circle, rgba(222,195,252,0.4066001400560224) 57%, rgba(222,195,252,1) 85%, rgba(222,195,252,1) 100%);
-    */
-    background-color: transparent;
-    text-shadow: 1px 1px 20px white;
-}
-
-section.intro {
-    background-color: rgb(170, 169, 169);
-}
-
-section.intro .box-text,
-section.intro .link-wrapper {
-    width: 80vh;
-}
-
-section.intro .box-text {
+section.intro .text-box {
+    width: clamp(10px, 80%, 90% );
     margin-top: auto;
     margin-bottom: auto;
-}
-
-section.intro .link-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 40vh;
-}
-
-section.intro .link-wrapper a {
     text-align: center;
 }
 
-section.intro .box-text p {
-    font-size: 1.2rem;
+section h2,
+section.intro .text-box .name {
+    font-size: clamp(2rem, 7vh, 10vh);
 }
+
+section.intro .text-box .name {
+    /*text-decoration: underline   rgb(17, 156, 17);
+    */margin-bottom: 0;
+    line-height: 3.6rem;
+}
+
+section.intro .text-box .name p {
+    margin: 0;
+    display: inline-block;
+}
+
+.overlap {
+    position: absolute;
+}
+
+.overlap span:first-child {
+    color: green;
+    z-index: 1;
+}
+
+.overlap span:nth-child(2) {
+    z-index: 2;
+    position: relative;
+    left: -50%;
+    transform: translate(-50%);
+}
+
+.overlap span:nth-child(3) {
+    margin-left: 1rem;
+}
+
+.underline {
+    width: 100%;
+    height: .5rem;
+    background-color:  rgb(17, 156, 17);
+    margin-left: auto;
+    margin-right: auto;
+    line-height: .1rem;
+}
+
+section.intro .text-box .level {
+    /*height: clamp(1.5, 5vh, 5vh);*/
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    /*font-size: clamp(1.5, 5vh, 5vh);*/
+    margin: 0;
+    letter-spacing: .5rem;
+    /* line-height: .4rem; */
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /*line-height: .4rem;*/ 
+}
+
+
+section.intro .text-box .level span {
+    width: 100%;
+}
+
+section.intro .text-box .level ul.tech-list {
+    width: 100%;
+    height: 1rem;
+    position: absolute;
+    top: 0;
+    padding: 0 .8rem;
+    animation-name: trans;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+section.intro .text-box .level ul.tech-list li {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 2rem;
+    /*display: inline-block;*/
+    text-align: center;
+}
+
+@keyframes trans {
+    0%, 24%{transform:translateY(-100%)}
+    25%, 49% {transform:translateY(-300%)}
+    50%, 74% {transform:translateY(-500%)}
+    75%, 99% {transform:translateY(-700%)}/*
+    66.64%,81.30% {transform:translateY(-700%)}
+    83.30%,97.96% {transform:translateY(0%)}*/
+}
+
+section.intro .text-box p.text-content {
+    margin-top: 4rem;
+    line-height: 1.8rem;
+}
+
+section.intro a.download-cv {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.8rem 2.5rem;
+    font-size: 1.8rem;
+    border-radius: .3rem;
+    background-color: rgb(17, 156, 17);
+    text-align: center;
+}
+
+section.intro a.download-cv:hover {
+    background-color: rgb(10, 240, 60);
+    font-size: scale(1.2);
+}
+
+section.intro .link-wrapper,
+.card .card-body .card-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+}
+
+section.intro .link-wrapper a,
+.card .card-body .card-button-container a.button {
+    text-align: center;
+}
+
+section.intro .link-wrapper a span{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+
 
 section.intro .link-wrapper {
     bottom: 10vh;
@@ -127,12 +238,14 @@ section.intro .link-wrapper {
 }
 
 section.intro .link-wrapper a,
-.card .card-inner .card-button-container a {
-    color: rgb(104,65,169);
+.card .card-button-container a {
+    color: #eae4f1;
+    font-weight: 300;
 }
 
-section.intro .link-wrapper a:hover {
-    color: #DEC3FC;
+section.intro .link-wrapper a:hover,
+.card .card-body .card-button-container a.button:hover {
+    color: rgb(10, 240, 60);;
 }
 
 section.portfolio .cards-container{
@@ -145,80 +258,67 @@ section.portfolio .cards-container{
 }
 
 .card {
-    min-width: 100%;
-    height: 80vh;
-    /*perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    width: 90%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
     border: 0;
 }
 
-.card .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    border: 1px solid rgb(104,65,169);
-    border-radius: 2.5%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-/*
-.card .card-img,
-.card .card-body {
-    backface-visibility: hidden;
+.card h3 {
+    font-size: 3rem;
 }
 
-.card:hover .card-inner {
-    transform: rotateY(180deg);
+.card h3::first-letter {
+    text-transform: uppercase;
 }
 
-.card .card-body {
-    transform: rotateY(-180deg);
-}*/
-
-.card .card-body hr {
-    height: .2rem;
-    background-color: rgb(104,65,169);
-    border: 1px solid rgb(104,65,169);
+.card .card-img {
+    display: block;
+    background-color: #bbb;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
 }
 
-.card .card-body .card-button-container .button {
-    margin: .2rem .5rem;
+.card .card-body p.card-text {
+    margin: 1rem .5rem;
     font-size: 1.2rem;
 }
 
-
-.card .card-img {
-    background-color: #bbb;
-    color: black;
+.card .card-body .card-button-container a.button {
+    margin: .2rem .5rem;
+    font-size: 2rem;
 }
 
-section.contact form {
-    /*width: 30vw;*/
+.card .card-body .card-button-container a i.fab,
+.card .card-body .card-button-container a i.fas,
+.card .card-body .card-button-container a span {
+    display: block;
+    margin-top: 1rem;
 }
 
-form label i {
-    padding-right: 5px;
-    color: rgb(104,65,169);
+.card .card-body .card-button-container a i.fab,
+.card .card-body .card-button-container a i.fas {
+    font-size: 5rem;
 }
 
-form button {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    width: 15vw;
-    color: rgb(104,65,169)!important;
-}
-
-form button:hover i{
-    transform: scale(1.2);
+.card .card-body .card-button-container a span {
+    font-size: 2rem;
 }
 
 @media (max-width: 300px){
 
-    .card {
-        min-width: 90%;
-    }
-
-    section.intro .box-text {
+    section.intro .text-box {
         top: 10vh;
     }
     
@@ -229,12 +329,8 @@ form button:hover i{
 
 @media (max-width: 576px){
 
-    section.intro .box-text {
+    section.intro .text-box {
         top: 20vh;
-    }
-
-    .card  {
-        width: 90vw;
     }
 
     form button {
@@ -257,9 +353,6 @@ form button:hover i{
         font-size: 1.5rem;
     }
 
-    .card {
-        min-width: 40%;
-    }
 }
 
 @media (min-width: 768px) {
@@ -283,10 +376,6 @@ form button:hover i{
 
     header nav ul {
         margin-right: .5rem;
-    }
-
-    .card {
-        width: 30vw;
     }
 }
 
