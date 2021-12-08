@@ -19,7 +19,7 @@ $("button .fa-times").click( ()=> {
 
 
 function fetchRepos(){
-    let card ="";
+    let cardSection ="";
     let live = "";
     $.when(
         $.getJSON(`${APIENDPOINT}`)
@@ -36,8 +36,8 @@ function fetchRepos(){
 
                 if ( repo.name != "Jose-Enciso"){
                     let repoHTML = repo.html_url;
-                    card += `
-                        <div class="card">
+                    cardSection += `
+                        <section class="card">
                             <h3>${repo.name}</h3>
                             <img class="card-img" alt="..." src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png">
                             <div class="card-body">
@@ -52,13 +52,15 @@ function fetchRepos(){
                                         </a>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     `;
                 }
                 
 
             });
-            $("#cards-container").append(card);
+
+            $(cardSection).insertAfter("#portfolio");
+            //$("#cards-container").append(card);
         }
     )
 }
