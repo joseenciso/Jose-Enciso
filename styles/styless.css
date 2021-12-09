@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
 
-body {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     color: rgb(238, 229, 229);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -31,8 +36,11 @@ h3 {
 }
 
 main {
+    height: 100vh;
     z-index: -1;
     background-color: rgb(43, 43, 43);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 main:last-child {
@@ -46,6 +54,7 @@ main section {
     align-content: center;
     justify-content: space-around;
     border-bottom: .1rem solid red;
+    scroll-snap-align: start;
 }
 
 section h2 {
@@ -172,10 +181,18 @@ section.intro .level {
 }
 
 section.intro  p.text-content {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
     line-height: 1.8rem;
+}
+
+section.intro blockquote {
+
+    padding: 1rem;
+    border-radius: .5rem;
+    
+    background-color: rgb(85, 84, 84);
 }
 
 section.intro a.download-cv {
