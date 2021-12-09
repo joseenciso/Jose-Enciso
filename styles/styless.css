@@ -252,6 +252,8 @@ section.portfolio .cards-container{
     margin-left: auto;
     margin-right: auto;
     border: 0;
+    padding-top: 1rem;
+    paddin-bottom: 1rem;
 }
 
 .card h3 {
