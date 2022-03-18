@@ -18,6 +18,10 @@ $("button .fa-times").click( ()=> {
 });
 
 
+$(".close").click( ()=> {
+    $(".message").addClass("message-close");
+});
+
 function fetchRepos(){
     let cardSection ="";
     let live = "";
@@ -55,8 +59,6 @@ function fetchRepos(){
                         </div>
                     `;
                 }
-                
-
             });
 
             //$(cardSection).insertAfter("#cards-container");

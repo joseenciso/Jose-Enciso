@@ -66,6 +66,8 @@ main {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    /*scroll-snap-type: y mandatory;
+    overflow-y: hidden;*/
 }
 
 main section {
@@ -97,6 +99,7 @@ main section .hero-download {
 main section h1 {
     font-size: 4rem;
     margin-bottom: 0;
+    line-height: .6;
 }
 
 main section .hero-text p {
@@ -159,13 +162,6 @@ main section.portfolio {
 
 main section h2 {
     text-align: center;
-}
-
-main section.portfolio .cards-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 main section.portfolio .card {
@@ -287,9 +283,60 @@ main section#contact {
         margin: 0;
         text-align: center;
     }
+    
     main section.about .about-text {
         flex-direction: column-reverse;
         align-items: center;
     }
+
+    main section.portfolio .cards-container {
+        display: inline;
+        /*flex-wrap: nowrap;
+        overflow-x: auto;*/
+    }
 }
 
+
+
+
+
+.message {
+    color: white;
+    text-align: center;
+    background-color: rgb(255, 153, 0);
+    width: 80%;
+    padding: 2rem;
+    margin: 2rem auto;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.message .message-text {
+    margin-left: auto;
+    font-size: 2rem;
+}
+
+.message .close {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 1rem auto;
+    border-radius: .2rem;
+    border: 1px red solid;
+    background-color: red;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    cursor: pointer;
+}
+
+.message .close:hover {
+    background-color: rgb(255, 73, 73);
+}
+
+.message-close {
+    display: none;
+}
