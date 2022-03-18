@@ -37,10 +37,12 @@ function fetchRepos(){
                 if ( repo.name != "Jose-Enciso"){
                     let repoHTML = repo.html_url;
                     cardSection += `
-                        <section class="card">
+                        <div class="card">
                             <h3>${repo.name}</h3>
-                            <img class="card-img" alt="..." src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png">
+                            <img class="card-img" alt="${repo.name}" src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png">
+                           
                             <div class="card-body">
+                                <hr>
                                 <p class="card-text">${repo.description}</p>
                                 <div class="card-button-container">
                                     <a href="${repoHTML}" class="button" target="_blank">
@@ -49,17 +51,18 @@ function fetchRepos(){
                                     <a href="https://${user}.github.io/${repo.name}/" class="button" target="_blank">
                                         <i class="fas fa-globe-europe fas-5x"></i>
                                         <span>Live</span>
-                                        </a>
+                                    </a>
                                 </div>
                             </div>
-                        </section>
+                        </div>
                     `;
                 }
                 
 
             });
 
-            $(cardSection).insertAfter("#portfolio");
+            //$(cardSection).insertAfter("#cards-container");
+            $("#cards-container").append(cardSection);
             //$("#cards-container").append(card);
         }
     )
