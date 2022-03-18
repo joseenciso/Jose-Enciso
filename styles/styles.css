@@ -27,6 +27,7 @@ h2 {
 }
 
 header {
+    margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -61,21 +62,36 @@ header nav ul li {
     text-align: center;
 }
 
+main {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 main section {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 90vh;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 2rem;
     scroll-snap-align: start;
 }
 
 main section.hero {
-    
-    flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 main section .hero-text {
     margin: 2rem;
+}
+
+main section .hero-download {
+    width: 100%;
+    text-align: center;
 }
 
 main section h1 {
@@ -141,7 +157,7 @@ main section.portfolio {
     min-height: 100vh;
 }
 
-main section.portfolio h2 {
+main section h2 {
     text-align: center;
 }
 
@@ -154,7 +170,7 @@ main section.portfolio .cards-container {
 
 main section.portfolio .card {
     width: 300px;
-    height: 450px;
+    height: 350px;
     margin: .5rem;
     padding: .2rem;
     border-radius: .2rem;
@@ -168,10 +184,7 @@ main section.portfolio .card {
 }
 
 main section.portfolio .card .card-body {
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
 }
 
 
@@ -181,22 +194,33 @@ main section.portfolio .card h3 {
     margin-bottom: .8rem;
 }
 
-main section.portfolio .card img {
+main section.portfolio .card .card-body {
+    width: 270px;
+    height: 270px;
+    text-align: center;
+}
+main section.portfolio .card .card-body img {
     border-radius: .2rem;
-    width: 300px;
-    height: 200px;
 }
 
-main section.portfolio .card .card-body hr {
-    width: 95%;
-    margin-top: .5rem;
-    margin-bottom: .1rem;
+main section.portfolio .card .card-body p.card-text {
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 90%;
+    margin: .5rem 1rem;
+    visibility: hidden;
 }
 
+main section.portfolio .card .card-body img,
 main section.portfolio .card .card-body p {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    width: 95%;
 }
+
+main section.portfolio .card .card-body img:active p {
+    display: block;
+}
+
 
 main section.portfolio .card .card-button-container {
     text-align: center;
@@ -224,18 +248,48 @@ main section.about .about-links a {
 main section#contact {
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
     justify-content: space-around;
 }
 
-@media screen and (max-wdith: 450px) {
-    main section.about h2 {
-        text-align: center;
+@media screen and (max-width: 450px) {
+
+    header {
+        font-size: 2rem;
     }
 
+    header nav span {
+        height: 32px;
+        width: 32px;
+    }
+    
+    header nav span i {
+        width: 32px !important;
+    }
+
+    header nav span i.fa-times,
+    header nav ul {
+        display: none;
+    }
+
+    main section.hero .hero-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    main section.hero h1 {
+        text-align: center;
+        line-height: .9;
+        font-size: 5.4rem;
+    }
+
+    main section.hero p,
+    main section.hero .hero-download a {
+        margin: 0;
+        text-align: center;
+    }
     main section.about .about-text {
         flex-direction: column-reverse;
         align-items: center;
     }
 }
+

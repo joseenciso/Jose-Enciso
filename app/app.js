@@ -39,20 +39,18 @@ function fetchRepos(){
                     cardSection += `
                         <div class="card">
                             <h3>${repo.name}</h3>
-                            <img class="card-img" alt="${repo.name}" src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png">
-                           
                             <div class="card-body">
-                                <hr>
+                                <img class="card-img" alt="${repo.name}" src="https://raw.githubusercontent.com/joseenciso/${repo.name}/master/media/img/${repo.name}-thumbnail.png">
                                 <p class="card-text">${repo.description}</p>
-                                <div class="card-button-container">
-                                    <a href="${repoHTML}" class="button" target="_blank">
-                                        <i class="fab fa-github-alt fab-5x"></i><span>Code</span>
-                                    </a>
-                                    <a href="https://${user}.github.io/${repo.name}/" class="button" target="_blank">
-                                        <i class="fas fa-globe-europe fas-5x"></i>
-                                        <span>Live</span>
-                                    </a>
-                                </div>
+                            </div>
+                            <div class="card-button-container">
+                                <a href="${repoHTML}" class="button" target="_blank">
+                                    <i class="fab fa-github-alt fab-5x"></i><span>Code</span>
+                                </a>
+                                <a href="https://${user}.github.io/${repo.name}/" class="button" target="_blank">
+                                    <i class="fas fa-globe-europe fas-5x"></i>
+                                    <span>Live</span>
+                                </a>
                             </div>
                         </div>
                     `;
