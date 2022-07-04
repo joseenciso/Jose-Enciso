@@ -14,13 +14,22 @@ $("button .fa-times").click( ()=> {
     $(".fa-times").addClass('hide');
     $(".fa-times").removeClass('show');
     $(".fa-bars").addClass('show');
-    $(".fa-bars").removeClass('hide')
+    $(".fa-bars").removeClass('hide');
 });
 
 
 $(".close").click( ()=> {
     $(".message").addClass("message-close");
 });
+
+function repos_name() {
+    : {
+        repo_link: "https://backpocket-store.herokuapp.com/"
+    },
+    1: {
+        repo_link: "https://bottleneck-gaming.herokuapp.com/"
+    }
+}
 
 function fetchRepos(){
     let cardSection ="";
@@ -67,5 +76,17 @@ function fetchRepos(){
         }
     )
 }
+
+
+window.addEventListener('scroll', ( )=> {
+       /* console.log(document.body.scrollTop)
+        console.log(window.onscroll )
+*/
+    //console.log(window.innerHeight);
+    const nav = document.getElementById('navegation');
+    ///console.log(nav.offsetTop);
+    let y = nav.offsetTop;
+    //console.log(y);
+});
 
 fetchRepos();

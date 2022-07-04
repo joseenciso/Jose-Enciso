@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+section#hero a:hover {
     color: white;
     font-weight: 600;
 }
@@ -26,14 +26,14 @@ h2 {
     font-size: 3rem;
 }
 
-header {
+section#navegation {
     margin: 0;
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-header,
-header nav {
+section#navegation,
+section#navegation nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -42,21 +42,21 @@ header nav {
     align-items: center;
 }
 
-header nav span {
-    width: 16px;
-    height: 16px;
+section#navegation nav span {
+    width: 32px;
+    height: 32px;
 }
 
-header nav span i {
+section#navegation nav span i {
     position: absolute;
 }
 
-header nav ul {
+section#navegation nav ul {
     display: flex;
     list-style-type: none;
 }
 
-header nav ul li {
+section#navegation nav ul li {
     width: 80px;
     text-decoration: none;
     text-align: center;
@@ -70,7 +70,8 @@ main {
     overflow-y: hidden;*/
 }
 
-main section {
+main section:not(#navegation),
+header#hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,48 +83,50 @@ main section {
     scroll-snap-align: start;
 }
 
-main section.hero {
+header#hero {
     align-items: flex-start;
     justify-content: space-evenly;
+    height: 100vh;
 }
 
-main section .hero-text {
+header#hero .hero-text {
     margin: 2rem;
 }
 
-main section .hero-download {
+header h1 {
+    /*font-size: 4rem*/
+    font-size: 5.5rem;
+    /*font-size: 25vh;*/
+    margin-bottom: 0;
+    line-height: .9;
+}
+
+header#hero .hero-text p {
+    margin-top: 0;
+    margin-left: 2rem;
+    /*font-size: 1.5rem;*/
+    font-size: 2.5rem;
+}
+
+header#hero .hero-download {
     width: 100%;
     text-align: center;
 }
 
-main section h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-    line-height: .6;
-}
-
-main section .hero-text p {
-    margin-top: 0;
-    margin-left: 2rem;
-    font-size: 1.5rem;
-}
-
-main section.hero a.download-cv {
-    font-size: 1.2rem;
+header#hero a.download-cv {
+    font-size: 2.2rem;
     color: rgb(201, 201, 201);
     background-color: rgb(46, 146, 63);
-    padding: .5rem .8rem;
+    padding: .5rem 1.2rem;
     border-radius: .25rem;
     text-align: center;
-    margin-left: 2rem;
     transition: transform .5s ease-in-out;
 }
 
-main section.hero a.download-cv:hover {
+header#hero a.download-cv:hover {
     color: rgb(216, 214, 214);
-    padding: .5rem .7rem;
+    /*padding: .5rem .7rem;*/
     background-color: rgb(52, 168, 71);
-    transform: scale(1.2);
 }
 
 main section.about {
@@ -162,6 +165,15 @@ main section.portfolio {
 
 main section h2 {
     text-align: center;
+}
+
+main section.portfolio #cards-container {
+    /*display: inline;*/
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+    align-items: center;
 }
 
 main section.portfolio .card {
@@ -247,57 +259,134 @@ main section#contact {
     justify-content: space-around;
 }
 
+main section#contact a i {
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+@media screen and ( max-width: 375px ) {
+    
+    a.donwload-cv {
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 450px) {
 
-    header {
-        font-size: 2rem;
-    }
 
-    header nav span {
+    section#hero nav span {
         height: 32px;
         width: 32px;
     }
     
-    header nav span i {
+    section#hero nav span i {
         width: 32px !important;
     }
 
-    header nav span i.fa-times,
+    /*header nav span i.fa-times,
     header nav ul {
         display: none;
-    }
+    }*/
 
-    main section.hero .hero-text {
+    section#hero .hero-text {
         margin-left: 0;
         margin-right: 0;
     }
 
-    main section.hero h1 {
+    section#hero h1 {
         text-align: center;
-        line-height: .9;
         font-size: 5.4rem;
     }
 
-    main section.hero p,
-    main section.hero .hero-download a {
+    section#hero p,
+    section#hero .hero-download a {
         margin: 0;
         text-align: center;
     }
+
+    section#hero a.download-cv {
+        border-radius: .5rem;
+    }
+    
+
+    main section.portfolio #cards-container {
+        /*display: inline;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;*/
+    }
+}
+
+@media screen and ( max-width: 575px ) {
     
     main section.about .about-text {
         flex-direction: column-reverse;
         align-items: center;
     }
+}
 
-    main section.portfolio .cards-container {
-        display: inline;
-        /*flex-wrap: nowrap;
+@media screen and (max-width: 767px) {
+
+    header {
+        font-size: 2rem;
+    }
+
+    header span  {
+        z-index: 99;
+    }
+
+    header nav ul {
+        /*display: none;*/
+        position: absolute;
+        top: 0;
+        right: 0%;
+        background-color: black;
+        height: 100vh;
+        width: 50vw;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+    }
+
+    header nav ul li,
+    header nav ul li a {
+        text-align: center;
+
+    }
+
+    main section.hero h1 {
+        font-size: 4rem
+    }
+
+    main section.hero p {
+        font-size: 1.6rem;
+    }
+
+    
+    main section.portfolio #cards-container {
+        /*display: inline;
+        display: flex;
+        flex-wrap: nowrap;
         overflow-x: auto;*/
+        flex-direction: column;
     }
 }
 
+@media screen and ( min-width: 768px ) {
+    header  nav span {
+        display: none;
+    }   
+}
 
-
+@media screen and ( min-width: 992px ) {
+    main section.hero h1 {
+        font-size: 25vh;
+    }
+}
 
 
 .message {
@@ -306,18 +395,25 @@ main section#contact {
     background-color: rgb(255, 153, 0);
     width: 80%;
     padding: 2rem;
-    margin: 2rem auto;
     position: absolute;
-    top: 1%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 40%;
+    left: auto;
+    right: auto;
+    width: 80vw;
+    height: 25vh;
+    transform: translateX( -50%, -50% );
     display: inline-flex;
     align-items: center;
     border-radius: .5rem;
+    transition: top 2s;
+}
+
+
+.message .message-close {
+    top: 0;
 }
 
 .message .message-text {
-    margin-left: auto;
     font-size: 2rem;
 }
 
@@ -331,12 +427,31 @@ main section#contact {
     padding-left: .8rem;
     padding-right: .8rem;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 1%;
 }
 
 .message .close:hover {
     background-color: rgb(255, 73, 73);
 }
 
-.message-close {
-    display: none;
+div.message:has(.message-close) {
+    /*display: none;*/
+    top: 0;
 }
+
+header span {
+    background-color: black;
+    border-radius: 2rem;
+}
+
+
+/*
+.fa-times {
+    transform: translateX(-50%);
+    position: absolute;
+    top: 1%;
+    right: 50%;
+}
+*/
