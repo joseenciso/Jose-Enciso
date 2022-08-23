@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build && echo 'www.joseenciso.co.uk > ./build/CNAME'",
+    "predeploy": "npm run build && echo www.joseenciso.co.uk > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
