@@ -1,0 +1,65 @@
+/********** Portfolio ******/
+.portfolio__container {
+	display: flex;
+	gap: 1.5rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.portfolio__item {
+	margin-top: 3rem;
+	width: 350px;
+	background: var( --colour-bg );
+	color: var( --colour-bg );
+	border-radius: .6rem .6rem;
+	border: 2px solid var( --colour-primary-variant );
+}
+
+.portfolio__item:hover {
+    border-color: var( --colour-white );
+    border-width: 2px;
+}
+
+.portfolio__item img {
+    min-width: 100%;
+    border-radius: .5rem .5rem  0 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.portfolio__item-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.portfolio__item-cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: .8rem;
+    padding-bottom: 1rem;
+}
+
+.portfolio__item a.btn-repo {
+	background: var( --colour-bg-variant );
+	color: var( --colour-white );
+}
+
+.portfolio__item a.btn-demo {
+	background: var( --colour-primary );
+	color: var( --colour-bg-variant );
+}
+
+.portfolio__item a.btn-demo:hover {
+	border-color: var( --colour-bg-variant );
+}
+
+/* ==== Small Devices === */
+@media screen and ( max-width: 576px ) {
+	.portfolio__container .portfolio__item {
+		width: 300px;
+	}
+	
+
+}

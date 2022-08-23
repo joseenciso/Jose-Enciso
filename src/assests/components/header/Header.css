@@ -1,0 +1,127 @@
+header {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header__container-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.header__container-content h1 {
+    font-size: 5rem;
+    line-height: 1;
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+.header__container h5 {
+    font-size: 2rem;
+    line-height: 0;
+}
+
+/* =========== CTA ========== */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* === Profile Image === */
+.jose-enciso {
+    background: linear-gradient(
+        180deg,
+        var(--colour-primary) 35%,
+        var( --colour-primary-variant ) 95%
+        );
+    width: 22rem;
+    height: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding: .5rem;
+    border-radius: 35%;
+    overflow: hidden;
+}
+
+.jose-enciso img {
+    border-radius: 35%;
+}
+
+/* === Scroll Down === */
+.scroll__down {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: center;
+    left: -30rem;
+    top: 8rem;
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+}
+
+/* ========== Socials ========== */
+.header__socials {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: -30rem;
+    top: 20rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.header__socials::after {
+    content: '';
+    width: 2px;
+    height: 3rem;
+    background-color: var(--colour-primary);
+}
+
+
+/* ===== Medium Devices ==== */
+@media screen and ( max-width: 1024px ) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* ==== Small Devices === */
+@media screen and ( max-width: 600px ) {
+    header {
+        height: 100vh;
+    }
+
+    header h1,
+    header h5{
+        text-align: center;
+    }
+
+    .cta {
+        margin-top: 5rem;
+    }
+
+    .jose-enciso {
+        margin-top: 3rem;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+
+    .jose-enciso {
+        width: 50vw;
+        height: 50vw;
+    }
+}

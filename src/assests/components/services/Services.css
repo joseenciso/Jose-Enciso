@@ -1,0 +1,58 @@
+.services__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.service {
+    background: var( --colour-bg-variant );
+    border-radius: 0 0 1.2rem 1.2rem;
+    border: 2px solid var( --color-primary );
+    height: fit-content;
+    max-width: 400px;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    transition: var( --trasition );
+}
+
+.service:hover {
+    /*background: var( --colour-bg );*/
+    border-color: var( --colour-primary );
+    cursor: default;
+}
+
+.service__head {
+    text-align: center;
+    background: var( --colour-primary);
+    padding: 1.5rem;
+    /*border-radius: 0 0 2rem 1.2rem;*/
+    box-shadow:  0 2rem 1rem rgba( 0, 0, 0, 0.1);
+}
+
+.service__head h3 {
+    font-size: 1.5rem;
+}
+
+.service__list {
+    padding: 1.2rem;
+}
+
+.service__list li {
+    display: flex;
+    gap: .8rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+}
+
+.service__list-icon {
+    color: var( --colour-primary );
+    font-size: 3rem;
+} 
+
+.service__list p {
+    font-size: .9rem;
+}
