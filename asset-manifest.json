@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Jose-Enciso/static/css/main.49f0390d.css",
+    "main.js": "/Jose-Enciso/static/js/main.912110e9.js",
+    "static/js/787.128fc6e9.chunk.js": "/Jose-Enciso/static/js/787.128fc6e9.chunk.js",
+    "static/media/portfolio1.webp": "/Jose-Enciso/static/media/portfolio1.377596f6b2b6f1aa0b3d.webp",
+    "static/media/jose-enciso-cv.pdf": "/Jose-Enciso/static/media/jose-enciso-cv.4d7e282dd4ee659f8b3d.pdf",
+    "static/media/jose-enciso.jpg": "/Jose-Enciso/static/media/jose-enciso.047ab2e48f70bbdd0e0e.jpg",
+    "index.html": "/Jose-Enciso/index.html",
+    "main.49f0390d.css.map": "/Jose-Enciso/static/css/main.49f0390d.css.map",
+    "main.912110e9.js.map": "/Jose-Enciso/static/js/main.912110e9.js.map",
+    "787.128fc6e9.chunk.js.map": "/Jose-Enciso/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49f0390d.css",
+    "static/js/main.912110e9.js"
+  ]
+}
