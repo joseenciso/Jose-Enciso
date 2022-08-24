@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.49f0390d.css",
-    "main.js": "/static/js/main.5234b2df.js",
+    "main.css": "/static/css/main.c841559d.css",
+    "main.js": "/static/js/main.66367498.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/portfolio1.webp": "/static/media/portfolio1.377596f6b2b6f1aa0b3d.webp",
     "static/media/jose-enciso-cv.pdf": "/static/media/jose-enciso-cv.4d7e282dd4ee659f8b3d.pdf",
     "static/media/jose-enciso.jpg": "/static/media/jose-enciso.047ab2e48f70bbdd0e0e.jpg",
     "index.html": "/index.html",
-    "main.49f0390d.css.map": "/static/css/main.49f0390d.css.map",
-    "main.5234b2df.js.map": "/static/js/main.5234b2df.js.map",
+    "main.c841559d.css.map": "/static/css/main.c841559d.css.map",
+    "main.66367498.js.map": "/static/js/main.66367498.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49f0390d.css",
-    "static/js/main.5234b2df.js"
+    "static/css/main.c841559d.css",
+    "static/js/main.66367498.js"
   ]
 }
