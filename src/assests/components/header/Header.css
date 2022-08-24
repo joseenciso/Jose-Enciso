@@ -63,9 +63,14 @@ header {
     position: relative;
     align-items: center;
     left: -30rem;
-    top: 8rem;
+    top: 5rem;
     transform: rotate(90deg);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.scroll__down svg {
+    margin-top: .3rem;
+    margin-left: .5rem;
 }
 
 /* ========== Socials ========== */
@@ -76,15 +81,15 @@ header {
     align-items: center;
     position: relative;
     right: -30rem;
-    top: 20rem;
-    font-size: 1.5rem;
+    top: 19rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
 .header__socials::after {
     content: '';
     width: 2px;
-    height: 3rem;
+    height: 4rem;
     background-color: var(--colour-primary);
 }
 

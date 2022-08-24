@@ -13,45 +13,45 @@ const Experience = ( ) => {
 			<h2>My Experience</h2>
 			<div className="experience__container">
 				<div className="experience__card experience__frontend">
-						<h3>Frontend Development</h3>
-						<div className="experience__content">
-							<article className="experience__details">
-								<ImHtmlFive />
-								<h4 className='text-light'>
-										HTML
-								</h4>
-							</article>
-							<article className="experience__details">
-								<ImCss3 />
-								<h4 className='text-light'>
-										CSS
-								</h4>
-							</article>
-							<article className="experience__details">
-								<SiBootstrap />
-								<h4 className='text-light'>
-										Bootstrap
-								</h4>
-							</article>
-							<article className="experience__details">
-								<SiJavascript />
-								<h4 className='text-light'>
-										JavaScript
-								</h4>
-							</article>
-							<article className="experience__details">                            
-								<SiJquery />
-								<h4 className='text-light'>
-										jQuery
-								</h4>
-							</article>
-							<article className="experience__details">                            
-								<FaReact />
-								<h4 className='text-light'>
-										React
-								</h4>
-							</article>
-						</div>
+					<h3>Frontend Development</h3>
+					<div className="experience__content">
+						<article className="experience__details">
+							<ImHtmlFive />
+							<h4 className='text-light'>
+								HTML
+							</h4>
+						</article>
+						<article className="experience__details">
+							<ImCss3 />
+							<h4 className='text-light'>
+								CSS
+							</h4>
+						</article>
+						<article className="experience__details">
+							<SiBootstrap />
+							<h4 className='text-light'>
+								Bootstrap
+							</h4>
+						</article>
+						<article className="experience__details">
+							<SiJavascript />
+							<h4 className='text-light'>
+								JavaScript
+							</h4>
+						</article>
+						<article className="experience__details">                            
+							<SiJquery />
+							<h4 className='text-light'>
+								jQuery
+							</h4>
+						</article>
+						<article className="experience__details">                            
+							<FaReact />
+							<h4 className='text-light'>
+								React
+							</h4>
+						</article>
+					</div>
 				</div>
 
 				<div className="experience__card experience__backend">
@@ -60,49 +60,49 @@ const Experience = ( ) => {
 						<article className="experience__details">
 							<FaFlask />
 							<h4 className='text-light'>
-									Flask
+								Flask
 							</h4>
 						</article>
 						<article className="experience__details">
 							<SiDjango />
 							<h4 className='text-light'>
-									dJango
+								dJango
 							</h4>
 						</article>
 						<article className="experience__details">
 							<IoLogoNodejs />
 							<h4 className='text-light'>
-									Node.js
+								Node.js
 							</h4>
 						</article>
 						<article className="experience__details">
 							<SiMongodb />
 							<h4 className='text-light'>
-									MongoDB
+								MongoDB
 							</h4>
 						</article>
 						<article className="experience__details">                            
 							<FaStripeS />
 							<h4 className='text-light'>
-									Stripe
+								Stripe
 							</h4>
 						</article>
 						<article className="experience__details">                            
 							<FaReact />
 							<h4 className='text-light'>
-									React
+								React
 							</h4>
 						</article>
 						<article className="experience__details">                            
 							<FaAws />
 							<h4 className='text-light'>
-									AWS S3
+								AWS S3
 							</h4>
 						</article>
 						<article className="experience__details">                            
 							<DiSqllite />
 							<h4 className='text-light'>
-									SQLite
+								SQLite
 							</h4>
 						</article>
 					</div>
@@ -114,49 +114,49 @@ const Experience = ( ) => {
 						<article className="experience__details">
 							<IoLogoAngular /> 
 							<h4 className='text-light'>
-									Angular
+								Angular
 							</h4>
 						</article>
 						<article className="experience__details">
 							<FaVuejs />
 							<h4 className='text-light'>
-									Vue
+								Vue
 							</h4>
 						</article>
 						<article className="experience__details">
 							<FaJava />
 							<h4 className='text-light'>
-									Java
+								Java
 							</h4>
 						</article>
 						<article className="experience__details">
 							<TbBrandKotlin />
 							<h4 className='text-light'>
-									Kotlin
+								Kotlin
 							</h4>
 						</article>
 						<article className="experience__details">                            
 							<DiDotnet />
 							<h4 className='text-light'>
-									C#
+								C#
 							</h4>
 						</article>
 						<article className="experience__details">                            
 							<GrDocker />
 							<h4 className='text-light'>
-									Docker
+								Docker
 							</h4>
 						</article>
 						<article className="experience__details">                            
 							<SiDart />
 							<h4 className='text-light'>
-									Dart
+								Dart
 							</h4>
 						</article>
 						<article className="experience__details">                            
 							<SiFlutter />
 							<h4 className='text-light'>
-									Flutter
+								Flutter
 							</h4>
 						</article>
 					</div>

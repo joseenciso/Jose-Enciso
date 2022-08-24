@@ -5,52 +5,32 @@ const data = [
 	{
 		id: 0,
 		image: IMG1,
-		title: ' Project Title',
-		github: 'https://github.com',
-		demo: 'https://www.google.com/'
+		title: 'Abel Pineda',
+		github: 'https://github.com/joseenciso/abelpineda',
+		demo: 'https://www.abelpinedaconsultant.co.uk/'
 	},
 	{
 		id: 1,
 		image: IMG1,
-		title: ' Project Title',
-		github: 'https://github.com',
-		demo: 'https://www.google.com/'
+		title: 'Backpocket',
+		description: '',
+		github: 'https://github.com/joseenciso/Backpocket',
+		demo: 'https://backpocket-store.herokuapp.com/'
 	},
 	{
 		id: 2,
 		image: IMG1,
-		title: ' Project Title',
-		github: 'https://github.com',
-		demo: 'https://www.google.com/'
+		title: 'Bottleneck',
+		description: '',
+		github: 'https://github.com/joseenciso/bottleneck',
+		demo: 'https://bottleneck-gaming.herokuapp.com/home?page=1'
 	},
 	{
 		id: 3,
 		image: IMG1,
-		title: ' Project Title',
-		github: 'https://github.com',
-		demo: 'https://www.google.com/'
-	},
-	{
-		id: 4,
-		image: IMG1,
-		title: ' Project Title',
-		github: 'https://github.com',
-		demo: 'https://www.google.com/'
-	
-	},
-	{
-		id: 5,
-		image: IMG1,
-		title: ' Project Title',
-		github: 'https://github.com',
-		demo: 'https://www.google.com/'
-	},
-	{
-		id: 6,
-		image: IMG1,
-		title: ' Project Title',
-		github: 'https://://github.com/joseenciso',
-		demo: 'https://www.google.com/'
+		title: 'Live-Band',
+		github: 'https://github.com/joseenciso/Live-Band',
+		demo: 'https://joseenciso.github.io/Live-Band/'
 	}
 ];
 
@@ -64,22 +44,22 @@ const Projects = ( ) => {
 					data.map( ( { id, image, title, github, demo } ) => {
 						return (
 							<article key={id} className="portfolio__item">
-							<img src={ image } alt={ title } />
-							<div className="portfolio__item-content">
-								<h3>{ title }</h3>
-								<div className="portfolio__item-cta">
-									<a href={ github } 
-										target="_blank"  
-										rel="noopener noreferrer"
-										className='btn btn-repo'
-									>Github</a>
-									<a href={ demo } 
-										target="_blank" 
-										rel="noopener noreferrer"
-										className='btn btn-primary btn-demo'
-									>Live Demo</a>
+								<img src={ image } alt={ title } />
+								<div className="portfolio__item-content">
+									<h3>{ title }</h3>
+									<div className="portfolio__item-cta">
+										<a href={ github } 
+											target="_blank"  
+											rel="noopener noreferrer"
+											className='btn btn-repo'
+										>Github</a>
+										<a href={ demo } 
+											target="_blank" 
+											rel="noopener noreferrer"
+											className='btn btn-primary btn-demo'
+										>Live Demo</a>
+									</div>
 								</div>
-							</div>
 							</article>
 						)
 					})

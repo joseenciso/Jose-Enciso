@@ -21,6 +21,11 @@
     border-width: 2px;
 }
 
+.portfolio__item h3 {
+	color: var( --colour-white );
+	font-size: 1.8rem;
+}
+
 .portfolio__item img {
     min-width: 100%;
     border-radius: .5rem .5rem  0 0;
@@ -41,24 +46,24 @@
     padding-bottom: 1rem;
 }
 
-.portfolio__item a.btn-repo {
+a.btn-repo {
 	background: var( --colour-bg-variant );
 	color: var( --colour-white );
 }
 
-.portfolio__item a.btn-demo {
+a.btn-demo {
 	background: var( --colour-primary );
 	color: var( --colour-bg-variant );
 }
 
-.portfolio__item a.btn-demo:hover {
-	border-color: var( --colour-bg-variant );
+a.btn-demo:hover {
+	border-color: var( --colour-white );
 }
 
 /* ==== Small Devices === */
 @media screen and ( max-width: 576px ) {
 	.portfolio__container .portfolio__item {
-		width: 300px;
+		width: 90%;
 	}
 	
 

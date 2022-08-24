@@ -1,141 +1,161 @@
 .about__container {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 40% 50%;
-    gap: 10%;
+	display: flex;
+	flex-direction: column;
+	grid-template-columns: 40% 50%;
+	gap: 10%;
 }
 
 .about__me {
-    justify-content: center;
-    min-width: 100%;
-    height: fit-content;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+	justify-content: center;
+	min-width: 100%;
+	height: fit-content;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
 .about__me-image {
-    margin: 0;
-    width: 350px;
-    height: 350px;
-    border-radius: 2rem;
-    background: 
-        linear-gradient(
-            45deg,
-            transparent,
-            var( --colour-primary ),
-            transparent
-        );
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) rotate(-10deg);
+	margin: 0;
+	width: 350px;
+	height: 350px;
+	border-radius: 2rem;
+	background: 
+			linear-gradient(
+					45deg,
+					transparent,
+					var( --colour-primary ),
+					transparent
+			);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%) rotate(-10deg);
 }
 
 .about__me-image img{
-    margin: 0;
-    border-radius: 2rem;
-    overflow: hidden;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) rotate(15deg);
+	margin: 0;
+	border-radius: 2rem;
+	overflow: hidden;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%) rotate(15deg);
 }
 
-.about__content {
-    
-    margin-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+.about__content {	
+	margin-top: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .about__cards {
-    display: flex;
-    gap: 1.5rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 1rem;
+	display: flex;
+	gap: 1.5rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 1rem;
 }
 
 .about__card {
-    width: 300px;
-    background: var( --colour-bg-variant );
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    padding: 1rem;
-    text-align: center;
-    transition: var( --transition );
+	width: 300px;
+	background: var( --colour-bg-variant );
+	border: 1px solid transparent;
+	border-radius: 1rem;
+	padding: 1rem;
+	text-align: center;
+	transition: var( --transition );
 }
 
 .about__card:hover {
-    background: var( --colour-primary-variant );
-    border-color: var( --colour-primary );
-    cursor: pointer;
+	background: var( --colour-primary-variant );
+	border-color: var( --colour-primary );
+	cursor: pointer;
 }
 
 .about__icon {
-    color: var( --colour-primary );
+	color: var( --colour-primary );
+	font-size: 3rem;
 }
 
 .about__card h5 {
-    font-size: .9rem;
+	font-size: 1.2rem;
 }
 
 .about__card small {
-    font-size: 0.6rem;
-    color: var( --colour-light );
+	font-size: 0.9rem;
+	color: var( --colour-light );
 }
 
 .about__content p{
-    margin: 2rem 0 2.6rem;
-    color: var( --colour-light );
+	margin: 2rem 0 2.6rem;
+	color: var( --colour-light );
+}
+
+.about__content .btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about__content .btn > svg {
+	margin-left: .5rem;
+}
+
+@media screen and ( min-width: 1025px ) {
+	.about__content p {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /* ===== Medium Devices ==== */
 @media screen and ( max-width: 1024px ) {
-    .about__container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
+	.about__container {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
 
-    .about__me {
-        width: 50%;
-        margin-top: 3rem;
-        margin-left: 0;
-        margin-right: 0;
-    }
+	.about__me {
+		width: 50%;
+		margin-top: 3rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
 
-    .about__content p {
-        margin: 1.5rem .2rem 2.5rem;
-    }
+	.about__content p {
+		margin: 1.5rem .2rem 2.5rem;
+	}
 
 }
 
 /* ==== Small Devices === */
 @media screen and ( max-width: 600px ) {
-    .about__me {
-        width: 100%;
-        margin-top: 3rem;
-        margin-left: 0;
-        margin-right: 0;
+	.about__me {
+		width: 100%;
+		margin-top: 3rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
 
-    }
+	.about__me-background,
+	.about__me-image {
+		width: 200px;
+		height: 200px;
+	}
 
-    .about__me-background,
-    .about__me-image {
-        width: 200px;
-        height: 200px;
-    }
+	.about__cards {
+		margin: 0 auto;
+		flex-direction: column;
+	}
 
-    .about__cards {
-        margin: 0 auto;
-        flex-direction: column;
-    }
+	.about__content {
+		text-align: center;
+	}
 
-    .about__content {
-        text-align: center;
-    }
-
-    .about__content p {
-        margin:  1.5rem 0;
-    }
+	.about__content p {
+		margin:  1.5rem 0;
+	}
 }
