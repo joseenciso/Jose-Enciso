@@ -1,2 +1,8 @@
 styles1.css
 styles2.css
+.vscode
+node_modules
+.git
+package.json
+package-lock.json
+yarn.lock
