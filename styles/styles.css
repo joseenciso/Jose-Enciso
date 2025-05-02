@@ -2,29 +2,50 @@
     box-sizing: border-box;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.tech-mask {
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, rgb(33, 37, 41) 5%, rgb(33, 37, 41) 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, rgb(33, 37, 41) 5%, rgb(33, 37, 41) 95%, transparent);
+
+}
+
+.tech-track {
+    display: inline-block;
+    padding-left: -100%; /* This offsets the starting point */
+    animation: marquee-animation 5s linear infinite;
+}
+
 .tech-list {
-    width: max-content;
-    animation: marquee-animation 20s linear infinite;
+    white-space: nowrap;
 }
 
-.tech-list span {
-
-}
-
-.tech-list span:nth-child(1) {
-
-}
 
 @keyframes marquee-animation {
     from {}
     to {
-        transform: translateX(-50%);
+        transform: translateX(-25%);
     }
 }
 
 @media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+
+
     .hero-image {
-        max-height: 10%;
+        /*max-height: 10%;*/
+        max-width: 45%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .card-container {
@@ -36,7 +57,7 @@
         justify-content: space-evenly;
 
         background-color: rgb(255, 255, 255);
-        color: black;
+        color: rgb(33, 37, 41);
     }
     
     .card-container img {
@@ -51,6 +72,17 @@
 }
 
 @media screen and (min-width: 769px) {
+    .hero {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .hero-image {
+        /*max-height: 10%;*/
+        max-width: 45%;
+        margin-left: 1rem;
+    }
+
     .hero-text {
         font-size: 1.2rem;
     }
@@ -67,7 +99,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         background-color: rgb(255, 255, 255);
-        color: black;
+        color: rgb(33, 37, 41);
     }
 
     .card-container img {
