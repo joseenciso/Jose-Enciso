@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    color: white;
 }
 
 .hero {
@@ -8,7 +9,7 @@
 }
 
 
-
+/** START Marqueee setting **/
 .tech-mask {
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent, rgb(33, 37, 41) 5%, rgb(33, 37, 41) 95%, transparent);
@@ -17,20 +18,28 @@
 }
 
 .tech-track {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     padding-left: -100%; /* This offsets the starting point */
-    animation: marquee-animation 5s linear infinite;
+    animation: marquee-animation 14s linear infinite;
 }
 
 .tech-list {
     white-space: nowrap;
 }
+/** END Marqueee setting **/
 
+.card-container h5,
+.card-container p {
+    color: black;
+}
 
+/********************************************/
 @keyframes marquee-animation {
     from {}
     to {
-        transform: translateX(-25%);
+        /*transform: translateX(-25%);*/
+        transform: translateX( calc(-48% - 0.5rem));
     }
 }
 
@@ -108,3 +117,22 @@
         object-fit: cover;
     }
 }
+
+/** Pallet Color **/
+.pallet {
+
+    color: #ebe9e9;
+    color: #c5c0c1;
+    color: #a2999a;
+    color: #7f7374;
+    color: #5a5152;
+    color: #373132;
+    color: #171415;
+
+    /** Pallet 2 ***/
+    color: #01161E;
+    color: #124559;
+    color: #598392;
+}
+
+/** **/
