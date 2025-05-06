@@ -294,67 +294,66 @@
             <p class="lead">Have a project in mind or just want to say hello? Feel free to reach out through the contact form — I’d love to hear from you!</p>
         </div>
         <hr class="my-4">
-        <div class="col-md-7 col-lg-8 mx-auto">
-            <h4 class="mb-3">Contact info</h4>
-            <form class="needs-validation" novalidate="">
-                <div class="row g-3">
-                    <div class="col-sm-6">
+        <form id="contact-form" class="needs-validation g-3 mx-auto" novalidate="" method="post">
+            <div class="contact-info p-2">
+                <h2 class="mb-3 text-center">Contact info</h2>
+                <div class="firstname">
                     <label for="firstName" class="form-label">First name</label>
                     <input type="text" class="form-control" id="firstName" placeholder="First name" value="" required="">
                     <div class="invalid-feedback">
                         Valid first name is required.
                     </div>
-                    </div>
-        
-                    <div class="col-sm-6">
+                </div>
+
+                <div class="lastname">
                     <label for="lastName" class="form-label">Last name</label>
                     <input type="text" class="form-control" id="lastName" placeholder="Last name" value="" required="">
-                    <div class="invalid-feedback">
-                        Valid last name is required.
+                        <div class="invalid-feedback">
+                            Valid last name is required.
                     </div>
-                    </div>
-        
-                    <div class="col-12">
-                        <label for="email" class="form-label">Email</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text">@</span>
-                            <input type="text" class="form-control" id="email" placeholder="Your email" required="">
+                </div>
+
+                <div class="email">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="email" placeholder="Your email" required="">
                         <div class="invalid-feedback">
                             Your email is required.
-                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-12">
-                        <label for="contact-number" class="form-label">Contact number</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text">#</span>
-                            <input type="text" class="form-control" id="contact-number" placeholder="Your contact number" required="">
+                <div class="cnumber">
+                    <label for="contact-number" class="form-label">Contact number</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text">#</span>
+                        <input type="text" class="form-control" id="contact-number" placeholder="Your contact number" required="">
                         <div class="invalid-feedback">
                             Your contact number is required.
-                            </div>
                         </div>
                     </div>
                 </div>
-        
-                <hr class="my-4">
-        
-                <!--div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="save-info">
-                    <label class="form-check-label" for="save-info">Save this information for next time</label>
-                </!--div>
-        
-                <hr class="my-4"-->
-        
-                <h4 class="mb-3">What project are we working on?</h4>
-        
-                <div class="form-floating">
-                    <textarea class="form-control h-100" placeholder="Leave a comment here" id="floatingTextarea2" rows="20"></textarea>
-                    <label for="floatingTextarea2">How can I help?</label>
-                </div>
+            </div>
 
-                <hr class="my-4">
-                <div class="button-send text-center">
+    
+            <!--div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Save this information for next time</label>
+            </!--div>
+    
+            <hr class="my-4"-->
+    
+            
+            <div class="message p-2">
+                <h4 class="mb-5 text-center">What project are we working on?</h4>
+                <div class="form-floating">
+                    <textarea class="form-control h-100" placeholder="Leave a comment here" id="form-message" rows="20"></textarea>
+                    <label for="form-message">How can I help?</label>
+                </div>
+            </div>
+            <div class="button-send text-center">
+                    <hr class="my-4">
                     <button class="w-50 btn btn-primary btn-lg" type="submit">Send</button>
                 </div>
             </form>
@@ -381,7 +380,7 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="app/app.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="app/mailserver.js"></script>
 </body>
 </html>
